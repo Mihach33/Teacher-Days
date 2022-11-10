@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44402242, g: 0.49316543, b: 0.5722324, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.5748171, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -123,6 +123,114 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &18118835
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 18118836}
+  - component: {fileID: 18118839}
+  - component: {fileID: 18118838}
+  - component: {fileID: 18118837}
+  m_Layer: 0
+  m_Name: Iceland
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &18118836
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18118835}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -14.94, y: 7.63, z: -0.006}
+  m_LocalScale: {x: 1.5392, y: 1.5392, z: 1.5392}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1390405127}
+  m_RootOrder: 37
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &18118837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18118835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &18118838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18118835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 18118837}
+          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
+          m_MethodName: ClickOnCountry
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Iceland
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!60 &18118839
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18118835}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 1.8252583, y: 0.3357495}
+      - {x: 2.0892553, y: -0.25260583}
+      - {x: 2.8442, y: -0.5742253}
+      - {x: 3.4466527, y: -0.3626386}
+      - {x: 4.010291, y: -0.16259551}
+      - {x: 4.2957487, y: 0.39603338}
+      - {x: 4.16388, y: 0.9618753}
+      - {x: 1.8494854, y: 1.089459}
 --- !u!1 &30426413
 GameObject:
   m_ObjectHideFlags: 0
@@ -1136,6 +1244,136 @@ PolygonCollider2D:
       - {x: 1.5904539, y: -1.5465301}
       - {x: 0.72214675, y: -1.423056}
       - {x: 0.41186774, y: -1.2290217}
+--- !u!1 &379717503
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 379717504}
+  - component: {fileID: 379717507}
+  - component: {fileID: 379717506}
+  - component: {fileID: 379717505}
+  m_Layer: 0
+  m_Name: Montenegro
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &379717504
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 379717503}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.11, y: -5.26, z: -0.006}
+  m_LocalScale: {x: 1.5392, y: 1.5392, z: 1.5392}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1390405127}
+  m_RootOrder: 30
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &379717505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 379717503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &379717506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 379717503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 379717505}
+          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
+          m_MethodName: ClickOnCountry
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Montenegro
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!60 &379717507
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 379717503}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 3.21047, y: 0.30382437}
+      - {x: 3.1734483, y: 0.30867326}
+      - {x: 3.117769, y: 0.34324032}
+      - {x: 3.094325, y: 0.34020132}
+      - {x: 3.092667, y: 0.30486685}
+      - {x: 3.1409223, y: 0.27594084}
+      - {x: 3.1528823, y: 0.24165545}
+      - {x: 3.150186, y: 0.21426837}
+      - {x: 3.0748487, y: 0.19118458}
+      - {x: 3.061854, y: 0.16872361}
+      - {x: 3.0545063, y: 0.071822196}
+      - {x: 3.022337, y: 0.010089258}
+      - {x: 2.9953632, y: -0.0014737076}
+      - {x: 3.0622778, y: -0.036250584}
+      - {x: 3.1661868, y: -0.16446608}
+      - {x: 3.1798875, y: -0.20511468}
+      - {x: 3.2233033, y: -0.23961852}
+      - {x: 3.2167232, y: -0.13611582}
+      - {x: 3.3182557, y: 0.010859544}
+      - {x: 3.356223, y: 0.005339917}
+      - {x: 3.3809044, y: -0.031910546}
+      - {x: 3.4207149, y: 0.010236295}
+      - {x: 3.42126, y: 0.043066595}
+      - {x: 3.4640741, y: 0.06966976}
+      - {x: 3.4631767, y: 0.1281828}
+      - {x: 3.3971958, y: 0.13946965}
+      - {x: 3.3617256, y: 0.18072067}
+      - {x: 3.2909672, y: 0.17981905}
+      - {x: 3.2634213, y: 0.21027115}
+      - {x: 3.258453, y: 0.25775248}
 --- !u!1 &415244810
 GameObject:
   m_ObjectHideFlags: 0
@@ -1277,6 +1515,133 @@ PolygonCollider2D:
       - {x: 0.044192255, y: 0.17409627}
       - {x: 0.004139915, y: 0.22663072}
       - {x: 0.12833007, y: 0.23000555}
+--- !u!1 &509446705
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 509446706}
+  - component: {fileID: 509446709}
+  - component: {fileID: 509446708}
+  - component: {fileID: 509446707}
+  m_Layer: 0
+  m_Name: Slovenia
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &509446706
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509446705}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.1, y: -3.67, z: -0.006}
+  m_LocalScale: {x: 1.5392, y: 1.5392, z: 1.5392}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1390405127}
+  m_RootOrder: 27
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &509446707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509446705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &509446708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509446705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 509446707}
+          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
+          m_MethodName: ClickOnCountry
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Slovenia
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!60 &509446709
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509446705}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 3.0431118, y: 0.2670792}
+      - {x: 2.9946382, y: 0.19250657}
+      - {x: 3.0149488, y: 0.14152643}
+      - {x: 2.9773202, y: 0.08873105}
+      - {x: 2.9904287, y: 0.004290331}
+      - {x: 3.0462453, y: -0.021500006}
+      - {x: 3.0446153, y: -0.0754181}
+      - {x: 2.9997406, y: -0.086539835}
+      - {x: 2.9993052, y: -0.11157641}
+      - {x: 3.0900571, y: -0.11319422}
+      - {x: 3.1757483, y: -0.04476017}
+      - {x: 3.221676, y: -0.045318287}
+      - {x: 3.3093379, y: -0.09039871}
+      - {x: 3.3611574, y: -0.08939918}
+      - {x: 3.3628695, y: -0.002982162}
+      - {x: 3.460276, y: 0.045032896}
+      - {x: 3.4673254, y: 0.11833978}
+      - {x: 3.6428103, y: 0.20497818}
+      - {x: 3.7473056, y: 0.20486832}
+      - {x: 3.7530532, y: 0.28699598}
+      - {x: 3.6858819, y: 0.36912185}
+      - {x: 3.5198345, y: 0.28976214}
+      - {x: 3.4357152, y: 0.28015068}
+      - {x: 3.3831987, y: 0.2524873}
+      - {x: 3.3164318, y: 0.24725305}
+      - {x: 3.2428272, y: 0.22236393}
+      - {x: 3.201877, y: 0.26902965}
 --- !u!1 &535492298
 GameObject:
   m_ObjectHideFlags: 0
@@ -2304,6 +2669,133 @@ PolygonCollider2D:
       - {x: 0.50283635, y: 0.2660904}
       - {x: 0.57265776, y: 0.25695103}
       - {x: 0.67563105, y: 0.33202466}
+--- !u!1 &1138446081
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1138446082}
+  - component: {fileID: 1138446085}
+  - component: {fileID: 1138446084}
+  - component: {fileID: 1138446083}
+  m_Layer: 0
+  m_Name: Great Britain
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1138446082
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138446081}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -9.32, y: -0.41, z: -0.006}
+  m_LocalScale: {x: 1.5392, y: 1.5392, z: 1.5392}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1390405127}
+  m_RootOrder: 35
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1138446083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138446081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1138446084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138446081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1138446083}
+          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
+          m_MethodName: ClickOnCountry
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Great Britain
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!60 &1138446085
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138446081}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 2.2013009, y: -0.59504366}
+      - {x: 2.2242725, y: -0.75270784}
+      - {x: 3.3958087, y: -0.5106983}
+      - {x: 3.7637522, y: -0.40765285}
+      - {x: 4.087535, y: -0.23063159}
+      - {x: 4.1172137, y: 0.34742174}
+      - {x: 3.8107886, y: 0.558647}
+      - {x: 3.0239131, y: 1.6218641}
+      - {x: 3.199872, y: 2.2525134}
+      - {x: 2.8837433, y: 2.2860153}
+      - {x: 2.9674182, y: 2.883511}
+      - {x: 1.8664005, y: 2.4552}
+      - {x: 1.8194629, y: 1.8664162}
+      - {x: 2.0170875, y: 1.3009782}
+      - {x: 1.8485504, y: 1.1597824}
+      - {x: 1.7954751, y: 1.1373057}
+      - {x: 1.740893, y: 1.014734}
+      - {x: 1.848042, y: 0.9052295}
+      - {x: 1.8899996, y: 0.9249456}
+      - {x: 1.8807852, y: 0.9774316}
+      - {x: 1.9352496, y: 1.0367905}
+      - {x: 2.0182657, y: 0.98481065}
+      - {x: 2.081428, y: 0.874746}
+      - {x: 2.2102115, y: 0.8153667}
+      - {x: 2.5112832, y: 0.60181755}
+      - {x: 2.298961, y: 0.04199519}
+      - {x: 2.4954326, y: -0.2993834}
 --- !u!1 &1148901720
 GameObject:
   m_ObjectHideFlags: 0
@@ -3468,6 +3960,155 @@ MonoBehaviour:
             m_StringArgument: Denmark
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!1 &1358549923
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1358549924}
+  - component: {fileID: 1358549927}
+  - component: {fileID: 1358549926}
+  - component: {fileID: 1358549925}
+  m_Layer: 0
+  m_Name: Bosnia
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1358549924
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358549923}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.8, y: -4.54, z: -0.006}
+  m_LocalScale: {x: 1.5392, y: 1.5392, z: 1.5392}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1390405127}
+  m_RootOrder: 29
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1358549925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358549923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1358549926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358549923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1358549925}
+          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
+          m_MethodName: ClickOnCountry
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Bosnia
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!60 &1358549927
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358549923}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 2.8438985, y: 0.118566796}
+      - {x: 2.8180897, y: 0.10282035}
+      - {x: 2.8320444, y: 0.07793949}
+      - {x: 3.0412452, y: -0.11231667}
+      - {x: 3.2405324, y: -0.3187765}
+      - {x: 3.2258618, y: -0.3724025}
+      - {x: 3.3426826, y: -0.38928968}
+      - {x: 3.3857467, y: -0.37747353}
+      - {x: 3.440815, y: -0.459071}
+      - {x: 3.4831572, y: -0.3998515}
+      - {x: 3.480172, y: -0.32255897}
+      - {x: 3.50956, y: -0.25722545}
+      - {x: 3.5517678, y: -0.25371355}
+      - {x: 3.5848331, y: -0.23679656}
+      - {x: 3.570332, y: -0.21038339}
+      - {x: 3.51783, y: -0.17407916}
+      - {x: 3.5132816, y: -0.12381025}
+      - {x: 3.554396, y: -0.094698794}
+      - {x: 3.6398869, y: -0.13983549}
+      - {x: 3.6734488, y: -0.13199842}
+      - {x: 3.6145444, y: -0.07079886}
+      - {x: 3.6114383, y: 0.0055111055}
+      - {x: 3.650041, y: 0.023753053}
+      - {x: 3.6942246, y: -0.001822928}
+      - {x: 3.700776, y: 0.023560582}
+      - {x: 3.6810567, y: 0.04738948}
+      - {x: 3.632909, y: 0.048544288}
+      - {x: 3.5474646, y: 0.113406934}
+      - {x: 3.5512214, y: 0.15456954}
+      - {x: 3.6055057, y: 0.23748744}
+      - {x: 3.6072464, y: 0.30240253}
+      - {x: 3.5650535, y: 0.28419775}
+      - {x: 3.5432065, y: 0.3111169}
+      - {x: 3.4576292, y: 0.31164268}
+      - {x: 3.409251, y: 0.3499509}
+      - {x: 3.3100033, y: 0.36481225}
+      - {x: 3.110828, y: 0.36671752}
+      - {x: 3.0270088, y: 0.40679592}
+      - {x: 2.9358294, y: 0.39009827}
+      - {x: 2.8629913, y: 0.38517466}
+      - {x: 2.8678195, y: 0.34673387}
+      - {x: 2.8143446, y: 0.3380195}
+      - {x: 2.7442565, y: 0.42524272}
+      - {x: 2.7126563, y: 0.4042732}
+      - {x: 2.7142565, y: 0.3393457}
+      - {x: 2.724638, y: 0.3254855}
+      - {x: 2.7023182, y: 0.31567004}
+      - {x: 2.7055087, y: 0.29073134}
+      - {x: 2.7406232, y: 0.28785726}
 --- !u!1 &1359579073
 GameObject:
   m_ObjectHideFlags: 0
@@ -3676,6 +4317,17 @@ Transform:
   - {fileID: 1873050803}
   - {fileID: 1272900415}
   - {fileID: 30426414}
+  - {fileID: 509446706}
+  - {fileID: 1504806783}
+  - {fileID: 1358549924}
+  - {fileID: 379717504}
+  - {fileID: 1799724485}
+  - {fileID: 1920952270}
+  - {fileID: 1543717844}
+  - {fileID: 2129689951}
+  - {fileID: 1138446082}
+  - {fileID: 1643767140}
+  - {fileID: 18118836}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4406,6 +5058,408 @@ PolygonCollider2D:
       - {x: 0.70121884, y: 0.38821664}
       - {x: 0.62664413, y: 0.33591416}
       - {x: 0.5002216, y: 0.3475776}
+--- !u!1 &1504806782
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1504806783}
+  - component: {fileID: 1504806786}
+  - component: {fileID: 1504806785}
+  - component: {fileID: 1504806784}
+  m_Layer: 0
+  m_Name: Croatia
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1504806783
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504806782}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.23, y: -3.78, z: -0.006}
+  m_LocalScale: {x: 1.5392, y: 1.5392, z: 1.5392}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1390405127}
+  m_RootOrder: 28
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1504806784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504806782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1504806785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504806782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1504806784}
+          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
+          m_MethodName: ClickOnCountry
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Croatia
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!60 &1504806786
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504806782}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 2.921912, y: 0.17015946}
+      - {x: 2.9156358, y: 0.11102213}
+      - {x: 2.8255236, y: 0.0610448}
+      - {x: 2.8152258, y: -0.036066603}
+      - {x: 2.7314084, y: -0.036537454}
+      - {x: 2.652905, y: 0.0064924285}
+      - {x: 2.5941074, y: 0.000015005469}
+      - {x: 2.5256777, y: -0.05957292}
+      - {x: 2.4216664, y: -0.059725337}
+      - {x: 2.4353266, y: -0.16788384}
+      - {x: 2.5049434, y: -0.22803144}
+      - {x: 2.5112238, y: -0.27165067}
+      - {x: 2.5723808, y: -0.170972}
+      - {x: 2.6352756, y: -0.2946457}
+      - {x: 2.8633406, y: -0.5819282}
+      - {x: 2.9434605, y: -0.52821136}
+      - {x: 3.0621662, y: -0.61180246}
+      - {x: 3.117146, y: -0.69111013}
+      - {x: 3.2912292, y: -0.8755691}
+      - {x: 3.4873385, y: -0.8901897}
+      - {x: 3.512873, y: -0.8213546}
+      - {x: 3.3648856, y: -0.6691605}
+      - {x: 3.081084, y: -0.40742633}
+      - {x: 3.099002, y: -0.37277505}
+      - {x: 3.0085764, y: -0.22797279}
+      - {x: 2.9689982, y: -0.22963685}
+      - {x: 2.9617836, y: -0.17490686}
+      - {x: 2.9869876, y: -0.15349168}
+      - {x: 2.983269, y: -0.07576504}
+      - {x: 3.0252783, y: -0.04988176}
+      - {x: 3.1056795, y: -0.13195422}
+      - {x: 3.1330261, y: -0.12742501}
+      - {x: 3.1325035, y: -0.088028915}
+      - {x: 3.21832, y: -0.08535667}
+      - {x: 3.2471185, y: -0.055016883}
+      - {x: 3.2897131, y: -0.084311716}
+      - {x: 3.3100133, y: -0.06465641}
+      - {x: 3.3739192, y: -0.06549649}
+      - {x: 3.389467, y: -0.10828558}
+      - {x: 3.4140675, y: -0.08784966}
+      - {x: 3.4773185, y: -0.10613208}
+      - {x: 3.5328674, y: -0.094541445}
+      - {x: 3.5386126, y: -0.10863293}
+      - {x: 3.6250038, y: -0.10567982}
+      - {x: 3.6493397, y: -0.12032518}
+      - {x: 3.703525, y: -0.12079023}
+      - {x: 3.748169, y: -0.16542512}
+      - {x: 3.8166845, y: -0.16902709}
+      - {x: 3.821318, y: -0.12846006}
+      - {x: 3.8891098, y: -0.1150199}
+      - {x: 3.8896964, y: -0.09826195}
+      - {x: 3.8395157, y: -0.09566983}
+      - {x: 3.8072743, y: -0.05177714}
+      - {x: 3.7707913, y: 0.084781185}
+      - {x: 3.738926, y: 0.09578409}
+      - {x: 3.7067275, y: 0.04641226}
+      - {x: 3.3570077, y: 0.14132763}
+      - {x: 3.2388406, y: 0.2596143}
+      - {x: 3.0794573, y: 0.25852692}
+--- !u!1 &1543717843
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1543717844}
+  - component: {fileID: 1543717847}
+  - component: {fileID: 1543717846}
+  - component: {fileID: 1543717845}
+  m_Layer: 0
+  m_Name: Makedonia
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1543717844
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543717843}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.12, y: -5.9, z: -0.006}
+  m_LocalScale: {x: 1.5392, y: 1.5392, z: 1.5392}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1390405127}
+  m_RootOrder: 33
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1543717845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543717843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1543717846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543717843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1543717845}
+          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
+          m_MethodName: ClickOnCountry
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Makedonia
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!60 &1543717847
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543717843}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 3.030422, y: 0.304197}
+      - {x: 2.834226, y: 0.2189291}
+      - {x: 2.7983465, y: 0.11426797}
+      - {x: 2.8034945, y: -0.029506676}
+      - {x: 2.9249344, y: -0.2056701}
+      - {x: 3.0398126, y: -0.13347882}
+      - {x: 3.1731553, y: -0.05695188}
+      - {x: 3.3020022, y: -0.058345534}
+      - {x: 3.36175, y: -0.016035847}
+      - {x: 3.4181142, y: -0.021732358}
+      - {x: 3.4530215, y: 0.004908923}
+      - {x: 3.429137, y: 0.12306575}
+      - {x: 3.3522506, y: 0.24723628}
+      - {x: 3.2577925, y: 0.330167}
+      - {x: 3.117425, y: 0.3117353}
+--- !u!1 &1643767139
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1643767140}
+  - component: {fileID: 1643767143}
+  - component: {fileID: 1643767142}
+  - component: {fileID: 1643767141}
+  m_Layer: 0
+  m_Name: Ireland
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1643767140
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643767139}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -11.71, y: 0.12, z: -0.006}
+  m_LocalScale: {x: 1.5392, y: 1.5392, z: 1.5392}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1390405127}
+  m_RootOrder: 36
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1643767141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643767139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1643767142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643767139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1643767141}
+          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
+          m_MethodName: ClickOnCountry
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Ireland
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!60 &1643767143
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643767139}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 2.6143675, y: -0.14646454}
+      - {x: 2.709944, y: -0.40470284}
+      - {x: 3.026064, y: -0.42909506}
+      - {x: 3.3263547, y: -0.2798297}
+      - {x: 3.658861, y: -0.20248806}
+      - {x: 3.746449, y: 0.05605474}
+      - {x: 3.7382746, y: 0.30977914}
+      - {x: 3.6373858, y: 0.45030415}
+      - {x: 3.6880858, y: 0.4918294}
+      - {x: 3.6035593, y: 0.5287461}
+      - {x: 3.554981, y: 0.61774576}
+      - {x: 3.4769464, y: 0.6585829}
+      - {x: 3.456096, y: 0.58077407}
+      - {x: 3.3921695, y: 0.5509262}
+      - {x: 3.2813268, y: 0.6655457}
+      - {x: 3.3494337, y: 0.8031572}
+      - {x: 3.3946137, y: 0.8163384}
+      - {x: 3.4463956, y: 0.8962532}
+      - {x: 3.5671737, y: 0.9662167}
+      - {x: 3.4489512, y: 1.0469385}
+      - {x: 3.2271194, y: 0.96138346}
+      - {x: 3.124622, y: 0.7636525}
+      - {x: 3.2774463, y: 0.7407694}
+      - {x: 3.1414347, y: 0.65535057}
+      - {x: 2.7741163, y: 0.6793935}
+      - {x: 2.7138712, y: 0.30066705}
+      - {x: 2.932872, y: 0.20652364}
+      - {x: 2.7830577, y: 0.0063504726}
 --- !u!1 &1656414819
 GameObject:
   m_ObjectHideFlags: 0
@@ -4566,6 +5620,133 @@ MonoBehaviour:
             m_StringArgument: Poland
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!1 &1799724484
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1799724485}
+  - component: {fileID: 1799724488}
+  - component: {fileID: 1799724487}
+  - component: {fileID: 1799724486}
+  m_Layer: 0
+  m_Name: Albania
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1799724485
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799724484}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.64, y: -6.12, z: -0.006}
+  m_LocalScale: {x: 1.5392, y: 1.5392, z: 1.5392}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1390405127}
+  m_RootOrder: 31
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1799724486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799724484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1799724487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799724484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1799724486}
+          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
+          m_MethodName: ClickOnCountry
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Albania
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!60 &1799724488
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799724484}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 2.9363678, y: 0.42629954}
+      - {x: 2.931815, y: 0.31301993}
+      - {x: 3.0107884, y: 0.28043455}
+      - {x: 2.9996502, y: 0.21687804}
+      - {x: 2.9617157, y: 0.20525134}
+      - {x: 2.9544964, y: 0.10414022}
+      - {x: 2.9840324, y: 0.01852487}
+      - {x: 2.9668508, y: -0.058651615}
+      - {x: 2.9621725, y: -0.11392925}
+      - {x: 2.9859428, y: -0.14436631}
+      - {x: 2.9736438, y: -0.21122898}
+      - {x: 3.002762, y: -0.25031802}
+      - {x: 3.091086, y: -0.24527995}
+      - {x: 3.1481926, y: -0.372237}
+      - {x: 3.199054, y: -0.41319412}
+      - {x: 3.2449257, y: -0.34863338}
+      - {x: 3.2502387, y: -0.25938433}
+      - {x: 3.3631773, y: -0.22054635}
+      - {x: 3.4154925, y: -0.080960035}
+      - {x: 3.30056, y: 0.05644665}
+      - {x: 3.260021, y: 0.21618775}
+      - {x: 3.2769005, y: 0.28719908}
+      - {x: 3.26032, y: 0.43759277}
+      - {x: 3.1721919, y: 0.4901841}
+      - {x: 3.124396, y: 0.5557312}
+      - {x: 3.0725286, y: 0.49166772}
+      - {x: 3.0327652, y: 0.56223816}
 --- !u!1 &1873050799
 GameObject:
   m_ObjectHideFlags: 0
@@ -4923,6 +6104,158 @@ PolygonCollider2D:
       - {x: 3.4669583, y: 0.2654449}
       - {x: 3.31813, y: 0.3376143}
       - {x: 3.2113512, y: 0.3371283}
+--- !u!1 &1920952269
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1920952270}
+  - component: {fileID: 1920952273}
+  - component: {fileID: 1920952272}
+  - component: {fileID: 1920952271}
+  m_Layer: 0
+  m_Name: Serbia
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1920952270
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920952269}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.64, y: -4.64, z: -0.006}
+  m_LocalScale: {x: 1.5392, y: 1.5392, z: 1.5392}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1390405127}
+  m_RootOrder: 32
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1920952271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920952269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1920952272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920952269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1920952271}
+          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
+          m_MethodName: ClickOnCountry
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Serbia
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!60 &1920952273
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920952269}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 2.8857205, y: 0.7084771}
+      - {x: 2.818208, y: 0.704531}
+      - {x: 2.7464628, y: 0.6583168}
+      - {x: 2.8039489, y: 0.49377206}
+      - {x: 2.8705058, y: 0.4725258}
+      - {x: 2.8818696, y: 0.43130207}
+      - {x: 2.8028898, y: 0.422178}
+      - {x: 2.804959, y: 0.3681865}
+      - {x: 2.8714359, y: 0.3720185}
+      - {x: 2.8712938, y: 0.28952605}
+      - {x: 2.8132393, y: 0.22134846}
+      - {x: 2.8130815, y: 0.1744056}
+      - {x: 2.9212785, y: 0.122530445}
+      - {x: 2.9721313, y: 0.08156415}
+      - {x: 2.9471455, y: 0.042342767}
+      - {x: 2.8865483, y: 0.062835135}
+      - {x: 2.8791683, y: -0.004230574}
+      - {x: 2.9389021, y: -0.06842866}
+      - {x: 2.9142041, y: -0.09411822}
+      - {x: 2.980272, y: -0.14722294}
+      - {x: 2.9772496, y: -0.18934873}
+      - {x: 3.0546367, y: -0.20719334}
+      - {x: 3.1029496, y: -0.2525646}
+      - {x: 3.1788182, y: -0.2683041}
+      - {x: 3.173327, y: -0.33974248}
+      - {x: 3.128817, y: -0.38062298}
+      - {x: 3.186228, y: -0.45767266}
+      - {x: 3.2821093, y: -0.5181787}
+      - {x: 3.291227, y: -0.6566267}
+      - {x: 3.30695, y: -0.59594333}
+      - {x: 3.3513963, y: -0.5708539}
+      - {x: 3.4844851, y: -0.5066934}
+      - {x: 3.7435162, y: -0.47965905}
+      - {x: 3.760769, y: -0.42709002}
+      - {x: 3.7130783, y: -0.34085557}
+      - {x: 3.8418024, y: -0.19149727}
+      - {x: 3.7133427, y: -0.033332527}
+      - {x: 3.6890914, y: 0.07138923}
+      - {x: 3.7339985, y: 0.1171518}
+      - {x: 3.7013829, y: 0.2594952}
+      - {x: 3.7350261, y: 0.3157641}
+      - {x: 3.6560347, y: 0.3275216}
+      - {x: 3.6096227, y: 0.26432136}
+      - {x: 3.556077, y: 0.30779663}
+      - {x: 3.511441, y: 0.27975184}
+      - {x: 3.4840708, y: 0.33010006}
+      - {x: 3.381803, y: 0.35566038}
+      - {x: 3.3649917, y: 0.39667177}
+      - {x: 3.4125564, y: 0.45790726}
+      - {x: 3.260383, y: 0.56594765}
+      - {x: 3.1505477, y: 0.7269251}
+      - {x: 2.9683867, y: 0.7904766}
 --- !u!1 &1963894082
 GameObject:
   m_ObjectHideFlags: 0
@@ -5040,3 +6373,138 @@ PolygonCollider2D:
       - {x: 0.24058066, y: 0.11879863}
       - {x: -0.010253608, y: 0.15527458}
       - {x: -0.34232938, y: 0.04112822}
+--- !u!1 &2129689950
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2129689951}
+  - component: {fileID: 2129689954}
+  - component: {fileID: 2129689953}
+  - component: {fileID: 2129689952}
+  m_Layer: 0
+  m_Name: Greece
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2129689951
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129689950}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.1, y: -7.04, z: -0.006}
+  m_LocalScale: {x: 1.5392, y: 1.5392, z: 1.5392}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1390405127}
+  m_RootOrder: 34
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2129689952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129689950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2129689953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129689950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2129689952}
+          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
+          m_MethodName: ClickOnCountry
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Greece
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!60 &2129689954
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129689950}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 2.9410052, y: 0.5306967}
+      - {x: 2.9334686, y: 0.45189705}
+      - {x: 2.8927872, y: 0.38483918}
+      - {x: 2.777505, y: 0.33249086}
+      - {x: 2.755152, y: 0.21185397}
+      - {x: 2.708426, y: 0.15485443}
+      - {x: 2.5759728, y: 0.26262367}
+      - {x: 2.5023038, y: 0.17984846}
+      - {x: 2.676795, y: 0.04859603}
+      - {x: 2.749368, y: 0.06345677}
+      - {x: 2.8712656, y: -0.07885217}
+      - {x: 2.7862875, y: -0.21360537}
+      - {x: 2.7310143, y: -0.32489502}
+      - {x: 2.8142347, y: -0.44564283}
+      - {x: 3.1045487, y: -0.710114}
+      - {x: 3.543859, y: -1.3003676}
+      - {x: 4.7292027, y: -1.4069078}
+      - {x: 6.2635303, y: -1.5717735}
+      - {x: 6.747599, y: -1.0752726}
+      - {x: 4.801308, y: -0.6689644}
+      - {x: 4.501523, y: 0.06700112}
+      - {x: 4.1301904, y: 0.25592405}
+      - {x: 4.4096146, y: 0.77177435}
+      - {x: 4.321641, y: 0.9459062}
+      - {x: 4.2110004, y: 0.8953973}
+      - {x: 4.252337, y: 0.76731414}
+      - {x: 3.904366, y: 0.7387545}
+      - {x: 3.845274, y: 0.7299538}
+      - {x: 3.830232, y: 0.7690604}
+      - {x: 3.7037168, y: 0.77556133}
+      - {x: 3.6307356, y: 0.7324117}
+      - {x: 3.4770005, y: 0.7240108}
+      - {x: 3.3052082, y: 0.6587141}
+      - {x: 3.1795783, y: 0.6711725}
+      - {x: 3.1103837, y: 0.609537}
