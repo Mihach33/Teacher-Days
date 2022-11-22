@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.5748171, a: 1}
+  m_IndirectSpecularColor: {r: 0.44402242, g: 0.49316543, b: 0.5722324, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -133,8 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 18118836}
   - component: {fileID: 18118839}
-  - component: {fileID: 18118838}
-  - component: {fileID: 18118837}
+  - component: {fileID: 18118840}
   m_Layer: 0
   m_Name: Iceland
   m_TagString: Country
@@ -157,47 +156,6 @@ Transform:
   m_Father: {fileID: 1390405127}
   m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &18118837
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 18118835}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &18118838
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 18118835}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 18118837}
-          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
-          m_MethodName: ClickOnCountry
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Iceland
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!60 &18118839
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -231,6 +189,19 @@ PolygonCollider2D:
       - {x: 4.2957487, y: 0.39603338}
       - {x: 4.16388, y: 0.9618753}
       - {x: 1.8494854, y: 1.089459}
+--- !u!114 &18118840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18118835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf57a305facb4bf4a9e0070c46f6f8e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &30426413
 GameObject:
   m_ObjectHideFlags: 0
@@ -241,7 +212,6 @@ GameObject:
   m_Component:
   - component: {fileID: 30426414}
   - component: {fileID: 30426415}
-  - component: {fileID: 30426417}
   - component: {fileID: 30426416}
   m_Layer: 0
   m_Name: Portugale
@@ -365,38 +335,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 30426413}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
+  m_Script: {fileID: 11500000, guid: cf57a305facb4bf4a9e0070c46f6f8e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &30426417
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 30426413}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 30426416}
-          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
-          m_MethodName: ClickOnCountry
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Portugale
-            m_BoolArgument: 0
-          m_CallState: 2
+  m_Delegates: []
 --- !u!1 &37773004
 GameObject:
   m_ObjectHideFlags: 0
@@ -407,8 +349,7 @@ GameObject:
   m_Component:
   - component: {fileID: 37773005}
   - component: {fileID: 37773008}
-  - component: {fileID: 37773007}
-  - component: {fileID: 37773006}
+  - component: {fileID: 37773009}
   m_Layer: 0
   m_Name: Chech
   m_TagString: Country
@@ -431,47 +372,6 @@ Transform:
   m_Father: {fileID: 1390405127}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &37773006
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 37773004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &37773007
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 37773004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 37773006}
-          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
-          m_MethodName: ClickOnCountry
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Chech
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!60 &37773008
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -539,6 +439,19 @@ PolygonCollider2D:
       - {x: 0.7600196, y: -0.41856617}
       - {x: 0.60666305, y: -0.2980091}
       - {x: 0.4998939, y: -0.28936073}
+--- !u!114 &37773009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37773004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf57a305facb4bf4a9e0070c46f6f8e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &47133942
 GameObject:
   m_ObjectHideFlags: 0
@@ -549,8 +462,7 @@ GameObject:
   m_Component:
   - component: {fileID: 47133943}
   - component: {fileID: 47133946}
-  - component: {fileID: 47133945}
-  - component: {fileID: 47133944}
+  - component: {fileID: 47133947}
   m_Layer: 0
   m_Name: Belorus
   m_TagString: Country
@@ -573,47 +485,6 @@ Transform:
   m_Father: {fileID: 1390405127}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &47133944
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 47133942}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &47133945
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 47133942}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 47133944}
-          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
-          m_MethodName: ClickOnCountry
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Belorus
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!60 &47133946
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -707,6 +578,19 @@ PolygonCollider2D:
       - {x: 0.67780733, y: -0.19443226}
       - {x: 0.73998934, y: -0.24180423}
       - {x: 0.8451266, y: -0.21062613}
+--- !u!114 &47133947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47133942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf57a305facb4bf4a9e0070c46f6f8e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &262889489
 GameObject:
   m_ObjectHideFlags: 0
@@ -870,7 +754,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -911,9 +795,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 324478801}
-  - component: {fileID: 324478804}
-  - component: {fileID: 324478803}
   - component: {fileID: 324478802}
+  - component: {fileID: 324478803}
   m_Layer: 0
   m_Name: Finland
   m_TagString: Country
@@ -1066,38 +949,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 324478800}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
+  m_Script: {fileID: 11500000, guid: cf57a305facb4bf4a9e0070c46f6f8e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &324478804
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 324478800}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 324478803}
-          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
-          m_MethodName: ClickOnCountry
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Finland
-            m_BoolArgument: 0
-          m_CallState: 2
+  m_Delegates: []
 --- !u!1 &344265744
 GameObject:
   m_ObjectHideFlags: 0
@@ -1108,8 +963,7 @@ GameObject:
   m_Component:
   - component: {fileID: 344265745}
   - component: {fileID: 344265748}
-  - component: {fileID: 344265747}
-  - component: {fileID: 344265746}
+  - component: {fileID: 344265749}
   m_Layer: 0
   m_Name: France
   m_TagString: Country
@@ -1132,47 +986,6 @@ Transform:
   m_Father: {fileID: 1390405127}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &344265746
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 344265744}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &344265747
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 344265744}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 344265746}
-          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
-          m_MethodName: ClickOnCountry
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: France
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!60 &344265748
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1245,6 +1058,19 @@ PolygonCollider2D:
       - {x: 1.5904539, y: -1.5465301}
       - {x: 0.72214675, y: -1.423056}
       - {x: 0.41186774, y: -1.2290217}
+--- !u!114 &344265749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344265744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf57a305facb4bf4a9e0070c46f6f8e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &379717503
 GameObject:
   m_ObjectHideFlags: 0
@@ -1255,8 +1081,7 @@ GameObject:
   m_Component:
   - component: {fileID: 379717504}
   - component: {fileID: 379717507}
-  - component: {fileID: 379717506}
-  - component: {fileID: 379717505}
+  - component: {fileID: 379717508}
   m_Layer: 0
   m_Name: Montenegro
   m_TagString: Country
@@ -1279,47 +1104,6 @@ Transform:
   m_Father: {fileID: 1390405127}
   m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &379717505
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 379717503}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &379717506
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 379717503}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 379717505}
-          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
-          m_MethodName: ClickOnCountry
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Montenegro
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!60 &379717507
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1375,6 +1159,19 @@ PolygonCollider2D:
       - {x: 3.2909672, y: 0.17981905}
       - {x: 3.2634213, y: 0.21027115}
       - {x: 3.258453, y: 0.25775248}
+--- !u!114 &379717508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 379717503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf57a305facb4bf4a9e0070c46f6f8e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &415244810
 GameObject:
   m_ObjectHideFlags: 0
@@ -1385,8 +1182,7 @@ GameObject:
   m_Component:
   - component: {fileID: 415244811}
   - component: {fileID: 415244814}
-  - component: {fileID: 415244813}
-  - component: {fileID: 415244812}
+  - component: {fileID: 415244815}
   m_Layer: 0
   m_Name: Hungary
   m_TagString: Country
@@ -1409,47 +1205,6 @@ Transform:
   m_Father: {fileID: 1390405127}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &415244812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 415244810}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &415244813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 415244810}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 415244812}
-          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
-          m_MethodName: ClickOnCountry
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Hungary
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!60 &415244814
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1516,6 +1271,19 @@ PolygonCollider2D:
       - {x: 0.044192255, y: 0.17409627}
       - {x: 0.004139915, y: 0.22663072}
       - {x: 0.12833007, y: 0.23000555}
+--- !u!114 &415244815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415244810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf57a305facb4bf4a9e0070c46f6f8e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &509446705
 GameObject:
   m_ObjectHideFlags: 0
@@ -1526,8 +1294,7 @@ GameObject:
   m_Component:
   - component: {fileID: 509446706}
   - component: {fileID: 509446709}
-  - component: {fileID: 509446708}
-  - component: {fileID: 509446707}
+  - component: {fileID: 509446710}
   m_Layer: 0
   m_Name: Slovenia
   m_TagString: Country
@@ -1550,47 +1317,6 @@ Transform:
   m_Father: {fileID: 1390405127}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &509446707
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 509446705}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &509446708
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 509446705}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 509446707}
-          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
-          m_MethodName: ClickOnCountry
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Slovenia
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!60 &509446709
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1643,6 +1369,19 @@ PolygonCollider2D:
       - {x: 3.3164318, y: 0.24725305}
       - {x: 3.2428272, y: 0.22236393}
       - {x: 3.201877, y: 0.26902965}
+--- !u!114 &509446710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509446705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf57a305facb4bf4a9e0070c46f6f8e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &535492298
 GameObject:
   m_ObjectHideFlags: 0
@@ -1653,8 +1392,7 @@ GameObject:
   m_Component:
   - component: {fileID: 535492299}
   - component: {fileID: 535492302}
-  - component: {fileID: 535492301}
-  - component: {fileID: 535492300}
+  - component: {fileID: 535492303}
   m_Layer: 0
   m_Name: Austria
   m_TagString: Country
@@ -1677,47 +1415,6 @@ Transform:
   m_Father: {fileID: 1390405127}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &535492300
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 535492298}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &535492301
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 535492298}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 535492300}
-          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
-          m_MethodName: ClickOnCountry
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Austria
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!60 &535492302
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1797,6 +1494,19 @@ PolygonCollider2D:
       - {x: 1.3218718, y: 0.6015193}
       - {x: 1.4700735, y: 0.6155093}
       - {x: 1.6271919, y: 0.55769944}
+--- !u!114 &535492303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535492298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf57a305facb4bf4a9e0070c46f6f8e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &537814310
 GameObject:
   m_ObjectHideFlags: 0
@@ -1807,7 +1517,6 @@ GameObject:
   m_Component:
   - component: {fileID: 537814311}
   - component: {fileID: 537814312}
-  - component: {fileID: 537814314}
   - component: {fileID: 537814313}
   m_Layer: 0
   m_Name: Sweden
@@ -2059,38 +1768,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 537814310}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
+  m_Script: {fileID: 11500000, guid: cf57a305facb4bf4a9e0070c46f6f8e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &537814314
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 537814310}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 537814313}
-          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
-          m_MethodName: ClickOnCountry
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Sweden
-            m_BoolArgument: 0
-          m_CallState: 2
+  m_Delegates: []
 --- !u!1 &591423839
 GameObject:
   m_ObjectHideFlags: 0
@@ -2101,7 +1782,6 @@ GameObject:
   m_Component:
   - component: {fileID: 591423840}
   - component: {fileID: 591423841}
-  - component: {fileID: 591423843}
   - component: {fileID: 591423842}
   m_Layer: 0
   m_Name: Ukraine
@@ -2310,38 +1990,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 591423839}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &591423843
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 591423839}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Script: {fileID: 11500000, guid: cf57a305facb4bf4a9e0070c46f6f8e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Delegates:
   - eventID: 4
     callback:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 591423842}
-          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
-          m_MethodName: CheckIfProperCountryClicked
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 591423839}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+        m_Calls: []
 --- !u!1 &688320855
 GameObject:
   m_ObjectHideFlags: 0
@@ -2352,8 +2008,7 @@ GameObject:
   m_Component:
   - component: {fileID: 688320856}
   - component: {fileID: 688320859}
-  - component: {fileID: 688320858}
-  - component: {fileID: 688320857}
+  - component: {fileID: 688320860}
   m_Layer: 0
   m_Name: Bulgary
   m_TagString: Country
@@ -2376,47 +2031,6 @@ Transform:
   m_Father: {fileID: 1390405127}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &688320857
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 688320855}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &688320858
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 688320855}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 688320857}
-          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
-          m_MethodName: ClickOnCountry
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Bulgary
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!60 &688320859
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2505,6 +2119,19 @@ PolygonCollider2D:
       - {x: 1.4270656, y: 0.35240102}
       - {x: 1.471406, y: 0.34246475}
       - {x: 1.3964268, y: 0.46133304}
+--- !u!114 &688320860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 688320855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf57a305facb4bf4a9e0070c46f6f8e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &1006365347
 GameObject:
   m_ObjectHideFlags: 0
@@ -2515,8 +2142,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1006365348}
   - component: {fileID: 1006365351}
-  - component: {fileID: 1006365350}
-  - component: {fileID: 1006365349}
+  - component: {fileID: 1006365352}
   m_Layer: 0
   m_Name: Italy
   m_TagString: Country
@@ -2539,47 +2165,6 @@ Transform:
   m_Father: {fileID: 1390405127}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1006365349
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1006365347}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1006365350
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1006365347}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1006365349}
-          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
-          m_MethodName: ClickOnCountry
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Italy
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!60 &1006365351
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2670,6 +2255,19 @@ PolygonCollider2D:
       - {x: 0.50283635, y: 0.2660904}
       - {x: 0.57265776, y: 0.25695103}
       - {x: 0.67563105, y: 0.33202466}
+--- !u!114 &1006365352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006365347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf57a305facb4bf4a9e0070c46f6f8e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &1138446081
 GameObject:
   m_ObjectHideFlags: 0
@@ -2680,8 +2278,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1138446082}
   - component: {fileID: 1138446085}
-  - component: {fileID: 1138446084}
-  - component: {fileID: 1138446083}
+  - component: {fileID: 1138446086}
   m_Layer: 0
   m_Name: Great Britain
   m_TagString: Country
@@ -2704,47 +2301,6 @@ Transform:
   m_Father: {fileID: 1390405127}
   m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1138446083
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1138446081}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1138446084
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1138446081}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1138446083}
-          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
-          m_MethodName: ClickOnCountry
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Great Britain
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!60 &1138446085
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2797,6 +2353,19 @@ PolygonCollider2D:
       - {x: 2.5112832, y: 0.60181755}
       - {x: 2.298961, y: 0.04199519}
       - {x: 2.4954326, y: -0.2993834}
+--- !u!114 &1138446086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138446081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf57a305facb4bf4a9e0070c46f6f8e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &1148901720
 GameObject:
   m_ObjectHideFlags: 0
@@ -2806,9 +2375,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1148901721}
-  - component: {fileID: 1148901724}
-  - component: {fileID: 1148901723}
   - component: {fileID: 1148901722}
+  - component: {fileID: 1148901723}
   m_Layer: 0
   m_Name: Norway
   m_TagString: Country
@@ -3055,38 +2623,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1148901720}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
+  m_Script: {fileID: 11500000, guid: cf57a305facb4bf4a9e0070c46f6f8e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1148901724
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1148901720}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1148901723}
-          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
-          m_MethodName: ClickOnCountry
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Norway
-            m_BoolArgument: 0
-          m_CallState: 2
+  m_Delegates: []
 --- !u!1 &1211032223
 GameObject:
   m_ObjectHideFlags: 0
@@ -3097,8 +2637,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1211032224}
   - component: {fileID: 1211032227}
-  - component: {fileID: 1211032226}
-  - component: {fileID: 1211032225}
+  - component: {fileID: 1211032228}
   m_Layer: 0
   m_Name: Rumunia
   m_TagString: Country
@@ -3121,47 +2660,6 @@ Transform:
   m_Father: {fileID: 1390405127}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1211032225
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1211032223}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1211032226
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1211032223}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1211032225}
-          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
-          m_MethodName: ClickOnCountry
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Rumunia
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!60 &1211032227
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3236,6 +2734,19 @@ PolygonCollider2D:
       - {x: 0.0664404, y: 0.7577553}
       - {x: 0.19501336, y: 0.79513764}
       - {x: 0.32935616, y: 0.7277777}
+--- !u!114 &1211032228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1211032223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf57a305facb4bf4a9e0070c46f6f8e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &1221844322
 GameObject:
   m_ObjectHideFlags: 0
@@ -3246,8 +2757,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1221844323}
   - component: {fileID: 1221844326}
-  - component: {fileID: 1221844325}
-  - component: {fileID: 1221844324}
+  - component: {fileID: 1221844327}
   m_Layer: 0
   m_Name: Slovakia
   m_TagString: Country
@@ -3270,47 +2780,6 @@ Transform:
   m_Father: {fileID: 1390405127}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1221844324
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1221844322}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1221844325
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1221844322}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1221844324}
-          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
-          m_MethodName: ClickOnCountry
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Slovakia
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!60 &1221844326
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3368,6 +2837,19 @@ PolygonCollider2D:
       - {x: 1.1188133, y: -0.050425716}
       - {x: 0.9421743, y: -0.28636742}
       - {x: 0.8655391, y: -0.17365202}
+--- !u!114 &1221844327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1221844322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf57a305facb4bf4a9e0070c46f6f8e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &1229617525
 GameObject:
   m_ObjectHideFlags: 0
@@ -3378,8 +2860,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1229617526}
   - component: {fileID: 1229617529}
-  - component: {fileID: 1229617528}
-  - component: {fileID: 1229617527}
+  - component: {fileID: 1229617530}
   m_Layer: 0
   m_Name: Swiss
   m_TagString: Country
@@ -3402,47 +2883,6 @@ Transform:
   m_Father: {fileID: 1390405127}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1229617527
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1229617525}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1229617528
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1229617525}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1229617527}
-          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
-          m_MethodName: ClickOnCountry
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Swiss
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!60 &1229617529
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3514,6 +2954,19 @@ PolygonCollider2D:
       - {x: 3.0332613, y: 0.2217765}
       - {x: 2.9667978, y: 0.20162515}
       - {x: 2.9398427, y: 0.22863607}
+--- !u!114 &1229617530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229617525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf57a305facb4bf4a9e0070c46f6f8e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &1260912064
 GameObject:
   m_ObjectHideFlags: 0
@@ -3524,8 +2977,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1260912065}
   - component: {fileID: 1260912068}
-  - component: {fileID: 1260912067}
-  - component: {fileID: 1260912066}
+  - component: {fileID: 1260912069}
   m_Layer: 0
   m_Name: Lichtenstein
   m_TagString: Country
@@ -3548,47 +3000,6 @@ Transform:
   m_Father: {fileID: 1390405127}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1260912066
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1260912064}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1260912067
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1260912064}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1260912066}
-          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
-          m_MethodName: ClickOnCountry
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Lichtenstein
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!60 &1260912068
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3619,6 +3030,19 @@ PolygonCollider2D:
       - {x: 3.2005649, y: 0.02397319}
       - {x: 3.2079945, y: 0.07323559}
       - {x: 3.1762369, y: 0.09073502}
+--- !u!114 &1260912069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1260912064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf57a305facb4bf4a9e0070c46f6f8e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &1272900414
 GameObject:
   m_ObjectHideFlags: 0
@@ -3629,8 +3053,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1272900415}
   - component: {fileID: 1272900418}
-  - component: {fileID: 1272900417}
-  - component: {fileID: 1272900416}
+  - component: {fileID: 1272900419}
   m_Layer: 0
   m_Name: Spain
   m_TagString: Country
@@ -3653,47 +3076,6 @@ Transform:
   m_Father: {fileID: 1390405127}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1272900416
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1272900414}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1272900417
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1272900414}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1272900416}
-          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
-          m_MethodName: ClickOnCountry
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Spain
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!60 &1272900418
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3829,6 +3211,19 @@ PolygonCollider2D:
       - {x: 0.50235105, y: -1.0474545}
       - {x: 0.44327322, y: -0.99726546}
       - {x: 0.32008556, y: -0.9849512}
+--- !u!114 &1272900419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1272900414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf57a305facb4bf4a9e0070c46f6f8e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &1333718326
 GameObject:
   m_ObjectHideFlags: 0
@@ -3838,9 +3233,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1333718327}
-  - component: {fileID: 1333718330}
-  - component: {fileID: 1333718329}
   - component: {fileID: 1333718328}
+  - component: {fileID: 1333718329}
   m_Layer: 0
   m_Name: Denmark
   m_TagString: Country
@@ -3929,38 +3323,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1333718326}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
+  m_Script: {fileID: 11500000, guid: cf57a305facb4bf4a9e0070c46f6f8e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1333718330
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1333718326}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1333718329}
-          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
-          m_MethodName: ClickOnCountry
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Denmark
-            m_BoolArgument: 0
-          m_CallState: 2
+  m_Delegates: []
 --- !u!1 &1358549923
 GameObject:
   m_ObjectHideFlags: 0
@@ -3971,8 +3337,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1358549924}
   - component: {fileID: 1358549927}
-  - component: {fileID: 1358549926}
-  - component: {fileID: 1358549925}
+  - component: {fileID: 1358549928}
   m_Layer: 0
   m_Name: Bosnia
   m_TagString: Country
@@ -3995,47 +3360,6 @@ Transform:
   m_Father: {fileID: 1390405127}
   m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1358549925
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1358549923}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1358549926
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1358549923}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1358549925}
-          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
-          m_MethodName: ClickOnCountry
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Bosnia
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!60 &1358549927
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4110,6 +3434,19 @@ PolygonCollider2D:
       - {x: 2.7023182, y: 0.31567004}
       - {x: 2.7055087, y: 0.29073134}
       - {x: 2.7406232, y: 0.28785726}
+--- !u!114 &1358549928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358549923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf57a305facb4bf4a9e0070c46f6f8e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &1359579073
 GameObject:
   m_ObjectHideFlags: 0
@@ -4120,8 +3457,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1359579074}
   - component: {fileID: 1359579077}
-  - component: {fileID: 1359579076}
-  - component: {fileID: 1359579075}
+  - component: {fileID: 1359579078}
   m_Layer: 0
   m_Name: Latvia
   m_TagString: Country
@@ -4144,47 +3480,6 @@ Transform:
   m_Father: {fileID: 1390405127}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1359579075
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1359579073}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1359579076
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1359579073}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1359579075}
-          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
-          m_MethodName: ClickOnCountry
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Latvia
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!60 &1359579077
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4260,6 +3555,19 @@ PolygonCollider2D:
       - {x: 0.071499154, y: 0.1901231}
       - {x: -0.032719295, y: 0.13565546}
       - {x: -0.043274596, y: -0.024580244}
+--- !u!114 &1359579078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359579073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf57a305facb4bf4a9e0070c46f6f8e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &1390405126
 GameObject:
   m_ObjectHideFlags: 0
@@ -4270,8 +3578,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1390405127}
   - component: {fileID: 1390405128}
-  - component: {fileID: 1390405130}
-  - component: {fileID: 1390405129}
   m_Layer: 0
   m_Name: MapOfEurope
   m_TagString: Untagged
@@ -4384,47 +3690,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1390405129
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1390405126}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1390405130
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1390405126}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1873050800}
-          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
-          m_MethodName: ClickOnCountry
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Nederland
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1 &1419893709
 GameObject:
   m_ObjectHideFlags: 0
@@ -4435,8 +3700,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1419893710}
   - component: {fileID: 1419893713}
-  - component: {fileID: 1419893712}
-  - component: {fileID: 1419893711}
+  - component: {fileID: 1419893714}
   m_Layer: 0
   m_Name: Moldova
   m_TagString: Country
@@ -4459,47 +3723,6 @@ Transform:
   m_Father: {fileID: 1390405127}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1419893711
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1419893709}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1419893712
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1419893709}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1419893711}
-          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
-          m_MethodName: ClickOnCountry
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Moldova
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!60 &1419893713
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4558,6 +3781,19 @@ PolygonCollider2D:
       - {x: 0.11393115, y: 0.10055962}
       - {x: -0.05629483, y: 0.23812482}
       - {x: -0.10443649, y: 0.43344313}
+--- !u!114 &1419893714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419893709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf57a305facb4bf4a9e0070c46f6f8e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &1443901478
 GameObject:
   m_ObjectHideFlags: 0
@@ -4568,8 +3804,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1443901479}
   - component: {fileID: 1443901482}
-  - component: {fileID: 1443901481}
-  - component: {fileID: 1443901480}
+  - component: {fileID: 1443901483}
   m_Layer: 0
   m_Name: Germany
   m_TagString: Country
@@ -4592,47 +3827,6 @@ Transform:
   m_Father: {fileID: 1390405127}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1443901480
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1443901478}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1443901481
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1443901478}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1443901480}
-          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
-          m_MethodName: ClickOnCountry
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Germany
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!60 &1443901482
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4741,6 +3935,19 @@ PolygonCollider2D:
       - {x: 1.9375805, y: 0.047622304}
       - {x: 1.6586831, y: -0.12835062}
       - {x: 1.6011647, y: -0.10144996}
+--- !u!114 &1443901483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443901478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf57a305facb4bf4a9e0070c46f6f8e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &1447963883
 GameObject:
   m_ObjectHideFlags: 0
@@ -4921,8 +4128,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1497088712}
   - component: {fileID: 1497088715}
-  - component: {fileID: 1497088714}
-  - component: {fileID: 1497088713}
+  - component: {fileID: 1497088716}
   m_Layer: 0
   m_Name: Litva
   m_TagString: Country
@@ -4945,47 +4151,6 @@ Transform:
   m_Father: {fileID: 1390405127}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1497088713
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1497088711}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1497088714
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1497088711}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1497088713}
-          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
-          m_MethodName: ClickOnCountry
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Litva
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!60 &1497088715
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5060,6 +4225,19 @@ PolygonCollider2D:
       - {x: 0.70121884, y: 0.38821664}
       - {x: 0.62664413, y: 0.33591416}
       - {x: 0.5002216, y: 0.3475776}
+--- !u!114 &1497088716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1497088711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf57a305facb4bf4a9e0070c46f6f8e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &1504806782
 GameObject:
   m_ObjectHideFlags: 0
@@ -5070,8 +4248,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1504806783}
   - component: {fileID: 1504806786}
-  - component: {fileID: 1504806785}
-  - component: {fileID: 1504806784}
+  - component: {fileID: 1504806787}
   m_Layer: 0
   m_Name: Croatia
   m_TagString: Country
@@ -5094,47 +4271,6 @@ Transform:
   m_Father: {fileID: 1390405127}
   m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1504806784
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1504806782}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1504806785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1504806782}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1504806784}
-          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
-          m_MethodName: ClickOnCountry
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Croatia
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!60 &1504806786
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5219,6 +4355,19 @@ PolygonCollider2D:
       - {x: 3.3570077, y: 0.14132763}
       - {x: 3.2388406, y: 0.2596143}
       - {x: 3.0794573, y: 0.25852692}
+--- !u!114 &1504806787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504806782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf57a305facb4bf4a9e0070c46f6f8e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &1543717843
 GameObject:
   m_ObjectHideFlags: 0
@@ -5229,8 +4378,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1543717844}
   - component: {fileID: 1543717847}
-  - component: {fileID: 1543717846}
-  - component: {fileID: 1543717845}
+  - component: {fileID: 1543717848}
   m_Layer: 0
   m_Name: Makedonia
   m_TagString: Country
@@ -5253,47 +4401,6 @@ Transform:
   m_Father: {fileID: 1390405127}
   m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1543717845
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1543717843}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1543717846
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1543717843}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1543717845}
-          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
-          m_MethodName: ClickOnCountry
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Makedonia
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!60 &1543717847
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5334,6 +4441,19 @@ PolygonCollider2D:
       - {x: 3.3522506, y: 0.24723628}
       - {x: 3.2577925, y: 0.330167}
       - {x: 3.117425, y: 0.3117353}
+--- !u!114 &1543717848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543717843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf57a305facb4bf4a9e0070c46f6f8e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &1643767139
 GameObject:
   m_ObjectHideFlags: 0
@@ -5344,8 +4464,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1643767140}
   - component: {fileID: 1643767143}
-  - component: {fileID: 1643767142}
-  - component: {fileID: 1643767141}
+  - component: {fileID: 1643767144}
   m_Layer: 0
   m_Name: Ireland
   m_TagString: Country
@@ -5368,47 +4487,6 @@ Transform:
   m_Father: {fileID: 1390405127}
   m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1643767141
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1643767139}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1643767142
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1643767139}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1643767141}
-          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
-          m_MethodName: ClickOnCountry
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Ireland
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!60 &1643767143
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5462,6 +4540,19 @@ PolygonCollider2D:
       - {x: 2.7138712, y: 0.30066705}
       - {x: 2.932872, y: 0.20652364}
       - {x: 2.7830577, y: 0.0063504726}
+--- !u!114 &1643767144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643767139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf57a305facb4bf4a9e0070c46f6f8e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &1656414819
 GameObject:
   m_ObjectHideFlags: 0
@@ -5472,7 +4563,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1656414820}
   - component: {fileID: 1656414821}
-  - component: {fileID: 1656414823}
   - component: {fileID: 1656414822}
   m_Layer: 0
   m_Name: Poland
@@ -5590,38 +4680,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1656414819}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1656414823
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1656414819}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Script: {fileID: 11500000, guid: cf57a305facb4bf4a9e0070c46f6f8e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Delegates:
   - eventID: 4
     callback:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1656414822}
-          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
-          m_MethodName: ClickOnCountry
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Poland
-            m_BoolArgument: 0
-          m_CallState: 2
+        m_Calls: []
 --- !u!1 &1799724484
 GameObject:
   m_ObjectHideFlags: 0
@@ -5632,8 +4698,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1799724485}
   - component: {fileID: 1799724488}
-  - component: {fileID: 1799724487}
-  - component: {fileID: 1799724486}
+  - component: {fileID: 1799724489}
   m_Layer: 0
   m_Name: Albania
   m_TagString: Country
@@ -5656,47 +4721,6 @@ Transform:
   m_Father: {fileID: 1390405127}
   m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1799724486
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1799724484}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1799724487
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1799724484}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1799724486}
-          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
-          m_MethodName: ClickOnCountry
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Albania
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!60 &1799724488
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5749,6 +4773,19 @@ PolygonCollider2D:
       - {x: 3.124396, y: 0.5557312}
       - {x: 3.0725286, y: 0.49166772}
       - {x: 3.0327652, y: 0.56223816}
+--- !u!114 &1799724489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799724484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf57a305facb4bf4a9e0070c46f6f8e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &1810216959
 GameObject:
   m_ObjectHideFlags: 0
@@ -5784,8 +4821,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -35.6, y: -68.5}
-  m_SizeDelta: {x: 731, y: 137}
+  m_AnchoredPosition: {x: -19, y: -52}
+  m_SizeDelta: {x: 265.382, y: 74.499}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1810216961
 MonoBehaviour:
@@ -5834,12 +4871,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
+  m_fontSize: 65
   m_fontSizeBase: 100
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 200
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -5893,9 +4930,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1873050803}
-  - component: {fileID: 1873050802}
-  - component: {fileID: 1873050800}
   - component: {fileID: 1873050801}
+  - component: {fileID: 1873050804}
   m_Layer: 0
   m_Name: Nederland
   m_TagString: Country
@@ -5903,18 +4939,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1873050800
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1873050799}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!60 &1873050801
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5975,35 +4999,6 @@ PolygonCollider2D:
       - {x: 1.2050796, y: 0.5076897}
       - {x: 1.1102816, y: 0.6062523}
       - {x: 0.96861774, y: 0.6272489}
---- !u!114 &1873050802
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1873050799}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1873050800}
-          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
-          m_MethodName: ClickOnCountry
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Nederland
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!4 &1873050803
 Transform:
   m_ObjectHideFlags: 0
@@ -6019,6 +5014,64 @@ Transform:
   m_Father: {fileID: 1390405127}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1873050804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873050799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf57a305facb4bf4a9e0070c46f6f8e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
+--- !u!1 &1881627879
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1881627881}
+  - component: {fileID: 1881627880}
+  m_Layer: 0
+  m_Name: CountryManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1881627880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881627879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  countryName: {fileID: 1810216961}
+--- !u!4 &1881627881
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881627879}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 964.8067, y: 357.53122, z: 501.7915}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1917264302
 GameObject:
   m_ObjectHideFlags: 0
@@ -6029,8 +5082,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1917264303}
   - component: {fileID: 1917264306}
-  - component: {fileID: 1917264305}
-  - component: {fileID: 1917264304}
+  - component: {fileID: 1917264307}
   m_Layer: 0
   m_Name: Luxemburg
   m_TagString: Country
@@ -6053,47 +5105,6 @@ Transform:
   m_Father: {fileID: 1390405127}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1917264304
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1917264302}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1917264305
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1917264302}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1917264304}
-          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
-          m_MethodName: ClickOnCountry
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Luxemburg
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!60 &1917264306
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6124,6 +5135,19 @@ PolygonCollider2D:
       - {x: 3.2669532, y: -0.015516266}
       - {x: 3.2678685, y: 0.048662834}
       - {x: 3.1506946, y: 0.22613688}
+--- !u!114 &1917264307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1917264302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf57a305facb4bf4a9e0070c46f6f8e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &1918992678
 GameObject:
   m_ObjectHideFlags: 0
@@ -6134,8 +5158,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1918992679}
   - component: {fileID: 1918992682}
-  - component: {fileID: 1918992681}
-  - component: {fileID: 1918992680}
+  - component: {fileID: 1918992683}
   m_Layer: 0
   m_Name: Belgium
   m_TagString: Country
@@ -6158,47 +5181,6 @@ Transform:
   m_Father: {fileID: 1390405127}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1918992680
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1918992678}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1918992681
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1918992678}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1918992680}
-          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
-          m_MethodName: ClickOnCountry
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Belgium
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!60 &1918992682
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6241,6 +5223,19 @@ PolygonCollider2D:
       - {x: 3.4669583, y: 0.2654449}
       - {x: 3.31813, y: 0.3376143}
       - {x: 3.2113512, y: 0.3371283}
+--- !u!114 &1918992683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1918992678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf57a305facb4bf4a9e0070c46f6f8e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &1920952269
 GameObject:
   m_ObjectHideFlags: 0
@@ -6251,8 +5246,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1920952270}
   - component: {fileID: 1920952273}
-  - component: {fileID: 1920952272}
-  - component: {fileID: 1920952271}
+  - component: {fileID: 1920952274}
   m_Layer: 0
   m_Name: Serbia
   m_TagString: Country
@@ -6275,47 +5269,6 @@ Transform:
   m_Father: {fileID: 1390405127}
   m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1920952271
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1920952269}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1920952272
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1920952269}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1920952271}
-          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
-          m_MethodName: ClickOnCountry
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Serbia
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!60 &1920952273
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6393,6 +5346,19 @@ PolygonCollider2D:
       - {x: 3.260383, y: 0.56594765}
       - {x: 3.1505477, y: 0.7269251}
       - {x: 2.9683867, y: 0.7904766}
+--- !u!114 &1920952274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920952269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf57a305facb4bf4a9e0070c46f6f8e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &1963894082
 GameObject:
   m_ObjectHideFlags: 0
@@ -6403,8 +5369,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1963894083}
   - component: {fileID: 1963894086}
-  - component: {fileID: 1963894085}
-  - component: {fileID: 1963894084}
+  - component: {fileID: 1963894087}
   m_Layer: 0
   m_Name: Estonia
   m_TagString: Country
@@ -6427,47 +5392,6 @@ Transform:
   m_Father: {fileID: 1390405127}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1963894084
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1963894082}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1963894085
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1963894082}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1963894084}
-          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
-          m_MethodName: ClickOnCountry
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Estonia
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!60 &1963894086
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6510,6 +5434,19 @@ PolygonCollider2D:
       - {x: 0.24058066, y: 0.11879863}
       - {x: -0.010253608, y: 0.15527458}
       - {x: -0.34232938, y: 0.04112822}
+--- !u!114 &1963894087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963894082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf57a305facb4bf4a9e0070c46f6f8e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &2129689950
 GameObject:
   m_ObjectHideFlags: 0
@@ -6520,8 +5457,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2129689951}
   - component: {fileID: 2129689954}
-  - component: {fileID: 2129689953}
-  - component: {fileID: 2129689952}
+  - component: {fileID: 2129689955}
   m_Layer: 0
   m_Name: Greece
   m_TagString: Country
@@ -6544,47 +5480,6 @@ Transform:
   m_Father: {fileID: 1390405127}
   m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2129689952
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2129689950}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e858ae1c7c6af48b3890340ec0002f15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2129689953
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2129689950}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 2129689952}
-          m_TargetAssemblyTypeName: CountryClicker, Assembly-CSharp
-          m_MethodName: ClickOnCountry
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Greece
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!60 &2129689954
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6645,3 +5540,16 @@ PolygonCollider2D:
       - {x: 3.3052082, y: 0.6587141}
       - {x: 3.1795783, y: 0.6711725}
       - {x: 3.1103837, y: 0.609537}
+--- !u!114 &2129689955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129689950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf57a305facb4bf4a9e0070c46f6f8e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []

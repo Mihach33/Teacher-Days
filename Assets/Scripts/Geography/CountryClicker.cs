@@ -6,20 +6,28 @@ using UnityEngine;
 public class CountryClicker : MonoBehaviour
 {
     private String currentCountry = "";
-    [SerializeField]private List<GameObject> countries;
+    private List<GameObject> countries;
     private System.Random _random = new System.Random();
     [SerializeField] private TextMeshProUGUI countryName;
+    private static CountryClicker _instance; 
+    public static CountryClicker Instance => _instance;
+
+    private void Awake()
+    {
+        _instance = this;
+        countries = new List<GameObject>(GameObject.FindGameObjectsWithTag("Country"));
+   
+    }
 
     private void Start()
     {
-        countries = new List<GameObject>(GameObject.FindGameObjectsWithTag("Country"));
-        GetUnusedCountry();
-        currentCountry = "Ukraine";
+        countryName.text = "Ukraine";
+       // GetUnusedCountry();
     }
 
     public void CheckIfProperCountryClicked(GameObject country)
     {
-        if (country.name == countryName.text)
+        if (country.name.Equals(countryName.text))
         {
             GetUnusedCountry();
             Debug.Log("True");
@@ -39,9 +47,6 @@ public class CountryClicker : MonoBehaviour
             countries.RemoveAt(r);
         }
     }
-
-    public void ClickOnCountry(string countryName)
-    {
-        Debug.Log(countryName);
-    }
+    
+  
 }
