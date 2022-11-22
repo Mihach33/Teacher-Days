@@ -1,40 +1,41 @@
 using System;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class CountryClicker : MonoBehaviour
 {
     private String currentCountry = "";
-    private List<GameObject> countries;
+    [SerializeField]private List<GameObject> countries;
     private System.Random _random = new System.Random();
+    [SerializeField] private TextMeshProUGUI countryName;
 
     private void Start()
     {
         countries = new List<GameObject>(GameObject.FindGameObjectsWithTag("Country"));
-        // GetUnusedCountry();
+        GetUnusedCountry();
         currentCountry = "Ukraine";
     }
 
     public void CheckIfProperCountryClicked(GameObject country)
     {
-        var material = country.GetComponent<MeshRenderer>().material;
-        if (country.name == currentCountry)
+        if (country.name == countryName.text)
         {
-            currentCountry = "";
-            material.SetColor("_Color", Color.green);
+            GetUnusedCountry();
+            Debug.Log("True");
         }
         else
         {
-            material.SetColor("_Color", Color.red);
+            Debug.Log("False");
         }
     }
 
     private void GetUnusedCountry()
     {
-        if (currentCountry == "")
+        if (countryName.text == "")
         {
             int r = _random.Next(0, countries.Count);
-            currentCountry = countries[r].name;
+            countryName.text = countries[r].name;
             countries.RemoveAt(r);
         }
     }
