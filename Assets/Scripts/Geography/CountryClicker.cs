@@ -1,7 +1,9 @@
 using System;
 using System.Collections.Generic;
+
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CountryClicker : MonoBehaviour
 {
@@ -21,8 +23,8 @@ public class CountryClicker : MonoBehaviour
 
     private void Start()
     {
-        countryName.text = "Ukraine";
-       // GetUnusedCountry();
+        countryName.text = "Poland";
+        //GetUnusedCountry();
     }
 
     public void CheckIfProperCountryClicked(GameObject country)
@@ -30,11 +32,15 @@ public class CountryClicker : MonoBehaviour
         if (country.name.Equals(countryName.text))
         {
             GetUnusedCountry();
+            country.GetComponent<Image>().color = new Color(0,255,0);
             Debug.Log("True");
         }
         else
         {
-            Debug.Log("False");
+                var posVec = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                Debug.Log(posVec);
+                Debug.Log(country.name);
+                country.GetComponent<Image>().color = new Color(255,0,0,255);
         }
     }
 
