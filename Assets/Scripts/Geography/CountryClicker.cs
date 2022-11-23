@@ -7,12 +7,18 @@ using UnityEngine.UI;
 
 public class CountryClicker : MonoBehaviour
 {
-    private String currentCountry = "";
+    private String currentCountryName;
+    private GameObject currentCountryObject;
     private List<GameObject> countries;
     private System.Random _random = new System.Random();
     [SerializeField] private TextMeshProUGUI countryName;
     private static CountryClicker _instance; 
     public static CountryClicker Instance => _instance;
+
+    private Boolean playRedAnimation = false;
+    private Boolean playGreenAnimation = false;
+
+    private Boolean redAnimationPlayed = false;
 
     private void Awake()
     {
@@ -23,8 +29,21 @@ public class CountryClicker : MonoBehaviour
 
     private void Start()
     {
-        countryName.text = "Poland";
-        //GetUnusedCountry();
+        GetUnusedCountry();
+    }
+
+
+    private void Update()
+    {
+        if (playRedAnimation)
+        {
+            RedAnimationTransition();
+        }
+    }
+
+    private void RedAnimationTransition()
+    {
+        
     }
 
     public void CheckIfProperCountryClicked(GameObject country)
@@ -32,26 +51,24 @@ public class CountryClicker : MonoBehaviour
         if (country.name.Equals(countryName.text))
         {
             GetUnusedCountry();
-            country.GetComponent<Image>().color = new Color(0,255,0);
+            country.GetComponent<Image>().color = new Color(0,255,0, 255);
             Debug.Log("True");
         }
         else
         {
-                var posVec = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                Debug.Log(posVec);
-                Debug.Log(country.name);
-                country.GetComponent<Image>().color = new Color(255,0,0,255);
+            currentCountryObject = country;
+            Debug.Log(country.name);
+            playRedAnimation = true;
+            country.GetComponent<Image>().color = new Color(255,0,0,255);
         }
     }
 
     private void GetUnusedCountry()
-    {
-        if (countryName.text == "")
-        {
-            int r = _random.Next(0, countries.Count);
-            countryName.text = countries[r].name;
-            countries.RemoveAt(r);
-        }
+    { 
+        int r = _random.Next(0, countries.Count);
+        Debug.Log(r);
+        countryName.text = countries[r].name;
+        countries.RemoveAt(r);
     }
     
   
