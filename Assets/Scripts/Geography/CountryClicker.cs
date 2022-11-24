@@ -15,7 +15,7 @@ public class CountryClicker : MonoBehaviour
     private static CountryClicker _instance;
     public static CountryClicker Instance => _instance;
     [SerializeField] private int healthPoint;
-    [SerializeField] private Image[] _images;
+    [SerializeField] private GameObject[] _images;
     private Boolean playRedAnimation = false;
     private Boolean playRedReverseAnimation = false;
     private Boolean playGreenAnimation = false;
@@ -27,6 +27,10 @@ public class CountryClicker : MonoBehaviour
     private void Awake()
     {
         _instance = this;
+        foreach (var image in _images)
+        {
+            image.GetComponent<Image>().enabled = false;
+        }
         countries = new List<GameObject>(GameObject.FindGameObjectsWithTag("Country"));
     }
 
@@ -125,8 +129,7 @@ public class CountryClicker : MonoBehaviour
 
     private void PlusLosePoint()
     {
-        healthPoint++;
-        _images[healthPoint].GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 255);
+        _images[healthPoint++].GetComponent<Image>().enabled = true;
         // if (GameOver)
         // {
         //     GameOver
