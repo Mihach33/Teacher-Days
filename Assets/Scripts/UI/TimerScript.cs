@@ -2,6 +2,7 @@ using System;
 using System.Diagnostics;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Debug = UnityEngine.Debug;
 
 public class TimerScript : MonoBehaviour
@@ -13,8 +14,14 @@ public class TimerScript : MonoBehaviour
     public int[] levels;
     void Awake()
     {
-        lvl = PlayerPrefs.GetInt("Level", 1);
-        Debug.Log(lvl);
+        if (SceneManager.GetActiveScene().name.Equals("PlayGroundScene") || SceneManager.GetActiveScene().name.Equals("PlayGroundSceneNoTutor"))
+        {
+            lvl = PlayerPrefs.GetInt("Level", 1);
+        }
+        else
+        {
+            timeStart = 1000;
+        }
         _textMeshProUGUI = gameObject.GetComponent<TextMeshProUGUI>();
     }
 
@@ -22,21 +29,25 @@ public class TimerScript : MonoBehaviour
     {
         
         timerIsOn = true;
-        switch (lvl)
+        if (SceneManager.GetActiveScene().name.Equals("PlayGroundScene") ||
+            SceneManager.GetActiveScene().name.Equals("PlayGroundSceneNoTutor"))
         {
-            case 1:
-                timeStart = levels[0];
-                break;
-            case 2:
-                timeStart = levels[1];
-                break;
-            case 3:
-                timeStart = levels[2];
-                break;
-            case 4:
-                timeStart = levels[3];
-                break;
-            
+            switch (lvl)
+            {
+                case 1:
+                    timeStart = levels[0];
+                    break;
+                case 2:
+                    timeStart = levels[1];
+                    break;
+                case 3:
+                    timeStart = levels[2];
+                    break;
+                case 4:
+                    timeStart = levels[3];
+                    break;
+
+            }
         }
     }
 
