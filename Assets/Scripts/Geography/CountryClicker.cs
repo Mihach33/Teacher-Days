@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-
+using System.Runtime.CompilerServices;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -16,9 +16,12 @@ public class CountryClicker : MonoBehaviour
     public static CountryClicker Instance => _instance;
 
     private Boolean playRedAnimation = false;
+    private Boolean playRedReverseAnimation = false;
     private Boolean playGreenAnimation = false;
 
     private Boolean redAnimationPlayed = false;
+    private float animationTime = 10000f;
+    private float transpValue = 0f;
 
     private void Awake()
     {
@@ -39,27 +42,81 @@ public class CountryClicker : MonoBehaviour
         {
             RedAnimationTransition();
         }
+
+        if (playGreenAnimation)
+        {
+            GreenAnimationTransition();
+        }
+
+        if (playRedReverseAnimation)
+        {
+            RedAnimationReverseTransition();
+        }
+    }
+
+    private void GreenAnimationTransition()
+    {
+        if (transpValue <= 1f)
+        {
+            transpValue += 0.1f;
+            var currentColor = currentCountryObject.GetComponent<Image>().color;
+            currentCountryObject.GetComponent<Image>().color =
+                new Color(currentColor.r, currentColor.g, currentColor.b, transpValue);
+        }
+        else
+        {
+            playGreenAnimation = false;
+            transpValue = 0f;
+        }
+        
     }
 
     private void RedAnimationTransition()
     {
-        
+        if (transpValue <= 1f)
+        {
+            transpValue += 0.11f;
+            var currentColor = currentCountryObject.GetComponent<Image>().color;
+            currentCountryObject.GetComponent<Image>().color =
+                new Color(currentColor.r, currentColor.g, currentColor.b, transpValue);
+        }
+        else
+        {
+            playRedAnimation = false;
+            playRedReverseAnimation = true;
+        }
+    }
+    private void RedAnimationReverseTransition()
+    {
+        if (transpValue >= 0f)
+        {
+            transpValue -= 0.11f;
+            var currentColor = currentCountryObject.GetComponent<Image>().color;
+            currentCountryObject.GetComponent<Image>().color =
+                new Color(currentColor.r, currentColor.g, currentColor.b, transpValue);
+        }
+        else
+        {
+            transpValue = 0f;
+            playRedReverseAnimation = false;
+        }
     }
 
     public void CheckIfProperCountryClicked(GameObject country)
     {
+        currentCountryObject = country;
         if (country.name.Equals(countryName.text))
         {
             GetUnusedCountry();
-            country.GetComponent<Image>().color = new Color(0,255,0, 255);
-            Debug.Log("True");
+            
+            country.GetComponent<Image>().color = new Color(0,255,0, 0);
+            playGreenAnimation = true;
         }
         else
         {
-            currentCountryObject = country;
             Debug.Log(country.name);
+            country.GetComponent<Image>().color = new Color(255,0,0,0);
             playRedAnimation = true;
-            country.GetComponent<Image>().color = new Color(255,0,0,255);
         }
     }
 
