@@ -12,14 +12,14 @@ public class CountryClicker : MonoBehaviour
     private List<GameObject> countries;
     private System.Random _random = new System.Random();
     [SerializeField] private TextMeshProUGUI countryName;
-    private static CountryClicker _instance; 
+    private static CountryClicker _instance;
     public static CountryClicker Instance => _instance;
     [SerializeField] private int healthPoint;
     [SerializeField] private Image[] _images;
     private Boolean playRedAnimation = false;
     private Boolean playRedReverseAnimation = false;
     private Boolean playGreenAnimation = false;
-    
+
     private Boolean redAnimationPlayed = false;
     private float animationTime = 10000f;
     private float transpValue = 0f;
@@ -28,9 +28,8 @@ public class CountryClicker : MonoBehaviour
     {
         _instance = this;
         countries = new List<GameObject>(GameObject.FindGameObjectsWithTag("Country"));
-   
     }
-    
+
 
     private void Start()
     {
@@ -71,7 +70,6 @@ public class CountryClicker : MonoBehaviour
             playGreenAnimation = false;
             transpValue = 0f;
         }
-        
     }
 
     private void RedAnimationTransition()
@@ -89,6 +87,7 @@ public class CountryClicker : MonoBehaviour
             playRedReverseAnimation = true;
         }
     }
+
     private void RedAnimationReverseTransition()
     {
         if (transpValue >= 0f)
@@ -111,46 +110,34 @@ public class CountryClicker : MonoBehaviour
         if (country.name.Equals(countryName.text))
         {
             GetUnusedCountry();
-            
-            country.GetComponent<Image>().color = new Color(0,255,0, 0);
+
+            country.GetComponent<Image>().color = new Color(0, 255, 0, 0);
             playGreenAnimation = true;
         }
         else
         {
             Debug.Log(country.name);
-            country.GetComponent<Image>().color = new Color(255,0,0,0);
+            country.GetComponent<Image>().color = new Color(255, 0, 0, 0);
             playRedAnimation = true;
-            healthPoint++;
             PlusLosePoint();
         }
     }
-    
-   private void PlusLosePoint()
-   {
-       switch (healthPoint)
-       {
-           case 1:
-               _images[healthPoint].enabled = true;
-               break;
-           case 2:
-               _images[healthPoint].enabled = true;
-               break;
-           case 3:
-               _images[healthPoint].enabled = true;
-               break;
-           default:
-               //GameOver
-               break;
-       }
-   }
+
+    private void PlusLosePoint()
+    {
+        healthPoint++;
+        _images[healthPoint].GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 255);
+        // if (GameOver)
+        // {
+        //     GameOver
+        // }
+    }
 
     private void GetUnusedCountry()
-    { 
+    {
         int r = _random.Next(0, countries.Count);
         Debug.Log(r);
         countryName.text = countries[r].name;
         countries.RemoveAt(r);
     }
-    
-  
 }
