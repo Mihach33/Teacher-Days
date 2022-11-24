@@ -14,11 +14,12 @@ public class CountryClicker : MonoBehaviour
     [SerializeField] private TextMeshProUGUI countryName;
     private static CountryClicker _instance; 
     public static CountryClicker Instance => _instance;
-
+    [SerializeField] private int healthPoint;
+    [SerializeField] private Image[] _images;
     private Boolean playRedAnimation = false;
     private Boolean playRedReverseAnimation = false;
     private Boolean playGreenAnimation = false;
-
+    
     private Boolean redAnimationPlayed = false;
     private float animationTime = 10000f;
     private float transpValue = 0f;
@@ -29,10 +30,12 @@ public class CountryClicker : MonoBehaviour
         countries = new List<GameObject>(GameObject.FindGameObjectsWithTag("Country"));
    
     }
+    
 
     private void Start()
     {
         GetUnusedCountry();
+        healthPoint = 0;
     }
 
 
@@ -117,8 +120,29 @@ public class CountryClicker : MonoBehaviour
             Debug.Log(country.name);
             country.GetComponent<Image>().color = new Color(255,0,0,0);
             playRedAnimation = true;
+            healthPoint++;
+            PlusLosePoint();
         }
     }
+    
+   private void PlusLosePoint()
+   {
+       switch (healthPoint)
+       {
+           case 1:
+               _images[healthPoint].enabled = true;
+               break;
+           case 2:
+               _images[healthPoint].enabled = true;
+               break;
+           case 3:
+               _images[healthPoint].enabled = true;
+               break;
+           default:
+               //GameOver
+               break;
+       }
+   }
 
     private void GetUnusedCountry()
     { 
