@@ -9,9 +9,11 @@ namespace Script.GameTable
         [SerializeField] private Button restartButton;
         [SerializeField] private Button menuButton;
         [SerializeField] private Button continueButton;
+        [SerializeField] private AudioSource winSound;
 
         private void Start()
         {
+            winSound.Play();
             restartButton.onClick.AddListener(() => { FindObjectOfType<SceneLoader>().LoadScene("PlayGroundScene"); });
             continueButton.onClick.AddListener(() =>
             {
