@@ -18,6 +18,7 @@ public class DrawLine : MonoBehaviour
     [SerializeField] private LayerMask _mask;
     [SerializeField] private BoardInteractComponent _boardInteractComponent;
 
+
     private void Start()
     {
         _camera = gameObject.GetComponentInChildren<Camera>();
@@ -36,6 +37,7 @@ public class DrawLine : MonoBehaviour
         
         if (Input.GetMouseButtonDown(0))
         {
+            
             newLine = new GameObject();
             newLine.transform.parent = parent.transform;
             drawLine = newLine.AddComponent<LineRenderer>();
