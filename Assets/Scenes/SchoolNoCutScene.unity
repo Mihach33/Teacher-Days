@@ -9772,7 +9772,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 736256220}
+      - m_Target: {fileID: 1181405970}
         m_TargetAssemblyTypeName: DialogueScript, Assembly-CSharp
         m_MethodName: StartDialogueCoroutine
         m_Mode: 1
@@ -10348,8 +10348,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text:
-  - 'At school I used to play rock paper scissors all the time   '
-  - 'I wonder if things have changed now?   '
+  - 'I''d like to check if I remember countries correctly '
+  - 'Time to check my memory '
   dialogue: {fileID: 1626560228}
   delay: 0.05
   delay1: 1
