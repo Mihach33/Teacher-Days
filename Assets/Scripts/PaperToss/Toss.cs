@@ -22,6 +22,8 @@ public class Toss : MonoBehaviour
     private Vector2 _mouseFinalPosition;
     private Vector2 _mouseInterval;
     private bool _isPressed;
+  
+    [SerializeField] private AudioSource swipe;
     
     void Awake () {
         rb = GetComponent<Rigidbody>();
@@ -38,6 +40,7 @@ public class Toss : MonoBehaviour
 
     void SetTrashPosition()
     {
+        
         var x = initTrashPos.x;
         var z = initPosition.z;
         var randomX = Random.Range(x - 1.0f, x + 2.0f);
@@ -49,6 +52,7 @@ public class Toss : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            
             clickTimeStart = Time.time;
             _isPressed = true;
             _mouseInitPosition = Input.mousePosition;
@@ -64,7 +68,7 @@ public class Toss : MonoBehaviour
             var speedDirection = _mouseInterval.x * timeInterval * 1.5f;
             
             rb.isKinematic = false;
-
+            swipe.Play();
             rb.AddForce(speedForce * throwForceInZ, speedForce * throwForceInXandY, -speedDirection);
             rb.useGravity = true;
             Invoke("ReloadBall", 2);
