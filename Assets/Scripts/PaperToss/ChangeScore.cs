@@ -24,6 +24,10 @@ namespace PaperToss
                 score++;
                 _scoreText.text = $"Score: {score}";
             }
+            else
+            {
+                score = 0;
+            }
         }
     }
 }
