@@ -13,6 +13,7 @@ namespace DefaultNamespace
         [SerializeField] private Button _result;
         [SerializeField] private Animator _playerAnimator;
         [SerializeField] private Animator _computerAnimator;
+        [SerializeField] private AudioSource _audioSource;
 
         private string[] states = {"Rock", "Paper", "Scissors"};
 
@@ -30,6 +31,7 @@ namespace DefaultNamespace
             {
                button.onClick.AddListener(() =>
                {
+                   _audioSource.Play();
                    StartCoroutine(CalculateFight(button.GetComponentInChildren<TextMeshProUGUI>().text));
                });
             }
@@ -37,6 +39,7 @@ namespace DefaultNamespace
 
         private IEnumerator CalculateFight(string userInput)
         {
+          
             _result.GetComponentInChildren<TextMeshProUGUI>().text = "Playing...";
             foreach (var playerButton in _playerButtons)
             {
@@ -48,7 +51,7 @@ namespace DefaultNamespace
             SetState(_computerAnimator, computerInput);
             
             yield return new WaitForSeconds(2f);
-            
+            _audioSource.Stop();
             foreach (var playerButton in _playerButtons)
             {
                 playerButton.enabled = true;
@@ -91,6 +94,8 @@ namespace DefaultNamespace
                     animator.SetBool("Paper", false);
                     break;
             }
+       
+         
             animator.SetTrigger("handAnimation");
         }
     }
