@@ -206,7 +206,7 @@ Transform:
   m_Children:
   - {fileID: 1525352671}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &378685137
 GameObject:
@@ -274,7 +274,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &882377010
 GameObject:
@@ -712,7 +712,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1372476256
 GameObject:
@@ -726,8 +726,9 @@ GameObject:
   - component: {fileID: 1372476260}
   - component: {fileID: 1372476259}
   - component: {fileID: 1372476258}
+  - component: {fileID: 1372476261}
   m_Layer: 0
-  m_Name: Exit
+  m_Name: Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -797,19 +798,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1372476259}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1372476259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -848,6 +837,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1372476256}
   m_CullTransparentMesh: 1
+--- !u!114 &1372476261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372476256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b6a5e4c3836af243a74427004109f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1404046728
 GameObject:
   m_ObjectHideFlags: 0
@@ -861,7 +862,7 @@ GameObject:
   - component: {fileID: 1404046731}
   - component: {fileID: 1404046730}
   m_Layer: 0
-  m_Name: Africa
+  m_Name: AfricaBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -932,16 +933,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: Play
-        m_Mode: 1
+      - m_Target: {fileID: 1417472440}
+        m_TargetAssemblyTypeName: UI.SceneLoader, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: GeoGuessAfrica
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1404046731
@@ -1118,6 +1119,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1409372331}
   m_CullTransparentMesh: 1
+--- !u!114 &1417472440 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 106256826284748433, guid: 8f1dd1a3d567d458fa7f4d1fd43ac01a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1997985313}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2dbbab8282bd4b8db4f1617a76bc9ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1525352670
 GameObject:
   m_ObjectHideFlags: 0
@@ -1277,9 +1290,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Exit
-
-'
+  m_text: Back
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fdf2291e8fb73a94d9f63560199fe277, type: 2}
   m_sharedMaterial: {fileID: 1572406689354990317, guid: fdf2291e8fb73a94d9f63560199fe277,
@@ -1441,16 +1452,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: Play
-        m_Mode: 1
+      - m_Target: {fileID: 1417472440}
+        m_TargetAssemblyTypeName: UI.SceneLoader, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: GeoGuessEurope
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1782743260
@@ -1627,6 +1638,75 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1941416035}
   m_CullTransparentMesh: 1
+--- !u!1001 &1997985313
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 106256826284748434, guid: 8f1dd1a3d567d458fa7f4d1fd43ac01a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 106256826284748434, guid: 8f1dd1a3d567d458fa7f4d1fd43ac01a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.3821607
+      objectReference: {fileID: 0}
+    - target: {fileID: 106256826284748434, guid: 8f1dd1a3d567d458fa7f4d1fd43ac01a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.9194655
+      objectReference: {fileID: 0}
+    - target: {fileID: 106256826284748434, guid: 8f1dd1a3d567d458fa7f4d1fd43ac01a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 275.3103
+      objectReference: {fileID: 0}
+    - target: {fileID: 106256826284748434, guid: 8f1dd1a3d567d458fa7f4d1fd43ac01a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 106256826284748434, guid: 8f1dd1a3d567d458fa7f4d1fd43ac01a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 106256826284748434, guid: 8f1dd1a3d567d458fa7f4d1fd43ac01a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 106256826284748434, guid: 8f1dd1a3d567d458fa7f4d1fd43ac01a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 106256826284748434, guid: 8f1dd1a3d567d458fa7f4d1fd43ac01a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 106256826284748434, guid: 8f1dd1a3d567d458fa7f4d1fd43ac01a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 106256826284748434, guid: 8f1dd1a3d567d458fa7f4d1fd43ac01a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 106256826284748435, guid: 8f1dd1a3d567d458fa7f4d1fd43ac01a,
+        type: 3}
+      propertyPath: m_Name
+      value: SceneLoader
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8f1dd1a3d567d458fa7f4d1fd43ac01a, type: 3}
 --- !u!1 &2012699672
 GameObject:
   m_ObjectHideFlags: 0
@@ -1711,16 +1791,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: Play
-        m_Mode: 1
+      - m_Target: {fileID: 1417472440}
+        m_TargetAssemblyTypeName: UI.SceneLoader, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: GeoGuessAsia
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2012699675

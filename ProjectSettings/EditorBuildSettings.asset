@@ -28,5 +28,20 @@ EditorBuildSettings:
     guid: 27b6b85f0d07942d487736e10d1d83b2
   - enabled: 1
     path: Assets/Scenes/SchoolNoCutScene.unity
-    guid: d0cf147da153f47ad947909825a50b26
+    guid: 701768e9df9dc470596fe799586d272b
+  - enabled: 1
+    path: Assets/Scenes/GeoGuessAfrica.unity
+    guid: 792fb088599124558a33401661c7e924
+  - enabled: 1
+    path: Assets/Scenes/GeoGuessAsia.unity
+    guid: c6198eb5c290d4e48b1862a751c967a8
+  - enabled: 1
+    path: Assets/Scenes/GeoGuessEurope.unity
+    guid: acf57768209bd43f9aaeaf7d6e0c790b
+  - enabled: 1
+    path: Assets/Scenes/GeoGuessMenu.unity
+    guid: 9f30bc16ac9c74df783e842757292b58
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}
