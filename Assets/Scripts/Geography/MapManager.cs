@@ -16,9 +16,9 @@ public class MapManager : MonoBehaviour
         }
         public void MoveObject()
         {
-            
-            if (Input.mousePosition.x + offset.x > limitx && Input.mousePosition.y + offset.y > limity1 && Input.mousePosition.y + offset.y < limity2 && Input.mousePosition.x + offset.x < limitx2)
-            {
+            Debug.Log(Input.mousePosition.x + offset.x);
+           if (Input.mousePosition.x + offset.x > limitx && Input.mousePosition.y + offset.y > limity1 && Input.mousePosition.y + offset.y < limity2 && Input.mousePosition.x + offset.x < limitx2)
+           {
                 _rectTransform.position = Input.mousePosition + offset;
             }       
         }
