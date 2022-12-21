@@ -12,7 +12,7 @@ public class MapManager : MonoBehaviour
         }
         public void MoveObject()
         {
-            if (Input.mousePosition.x + offset.x > -800)
+            if (Input.mousePosition.x + offset.x > 730 && Input.mousePosition.y + offset.y > 70 && Input.mousePosition.y + offset.y < 937 && Input.mousePosition.x + offset.x < 1040)
             {
                 _rectTransform.position = Input.mousePosition + offset;
             }
