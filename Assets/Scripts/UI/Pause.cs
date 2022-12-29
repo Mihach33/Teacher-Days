@@ -72,6 +72,8 @@ public class Pause : MonoBehaviour
         {
             SetPause();
         }
+
+        Cursor.visible = _isPauseFreeze;
     }
 
     private void SetPause()
