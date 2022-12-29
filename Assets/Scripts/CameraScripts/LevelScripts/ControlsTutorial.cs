@@ -31,16 +31,6 @@ public class ControlsTutorial : MonoBehaviour
 
 	void Update()
 	{
-		if (Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1))
-		{
-			Cursor.lockState = CursorLockMode.Locked;
-			Cursor.visible = false;
-		}
-		if (Input.GetKeyDown("escape"))
-		{
-			Cursor.lockState = CursorLockMode.Locked;
-			Cursor.visible = true;
-		}
 		KeyboardCommands.SetActive(Input.GetKey(KeyCode.F2));
 		gamepadCommands.SetActive(Input.GetKey(KeyCode.F3) || Input.GetKey(KeyCode.Joystick1Button7));
 	}

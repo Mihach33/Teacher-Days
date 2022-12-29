@@ -26,7 +26,6 @@ namespace DefaultNamespace
 
         private void Start()
         {
-            Cursor.visible = true;
             foreach (var button in _playerButtons)
             {
                button.onClick.AddListener(() =>

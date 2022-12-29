@@ -16,8 +16,8 @@ namespace UI
 
         private void OpenMenu()
         {
-            TimerScript.SetTimer(false);
             _pauseMenu.SetActive(true);
+            Time.timeScale = 0;
         }
     }
 }

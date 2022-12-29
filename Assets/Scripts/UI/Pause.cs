@@ -56,14 +56,11 @@ public class Pause : MonoBehaviour
 
     private int GetIsPauseWithoutCamera()
     {
-        if (_isPauseFreeze)
+        if (pauseCanvas.activeSelf)
         {
-            _isPauseFreeze = false;
-            return 1;
+            return 0;
         }
-
-        _isPauseFreeze = true;
-        return 0;
+        return 1;
     }
 
     void Update()
@@ -72,8 +69,8 @@ public class Pause : MonoBehaviour
         {
             SetPause();
         }
-
-        Cursor.visible = _isPauseFreeze;
+        if (cam != null)
+            Cursor.visible = _isPauseFreeze;
     }
 
     private void SetPause()

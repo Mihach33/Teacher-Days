@@ -5,9 +5,11 @@ namespace UI
 {
     public class CursorView : MonoBehaviour
     {
+        [SerializeField] private bool isVisible;
+        
         private void Start()
         {
-            Cursor.visible = true;
+            Cursor.visible = isVisible;
         }
     }
 }

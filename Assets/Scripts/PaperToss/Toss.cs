@@ -30,7 +30,6 @@ public class Toss : MonoBehaviour
         initPosition = transform.position;
         rb.useGravity = false;
         initTrashPos = trashPosition.position;
-        Cursor.visible = true;
         SetTrashPosition();
     }
 	

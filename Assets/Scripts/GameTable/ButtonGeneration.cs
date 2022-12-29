@@ -37,7 +37,6 @@ namespace GameTable
         private void Start()
         {
             lvl = PlayerPrefs.GetInt(levelKey, 0);
-            Cursor.visible = true;
             for (int i = 0; i < 5; i++)
             {
                 buttons[i] = Instantiate(_buttonPrefab);
@@ -244,16 +243,16 @@ namespace GameTable
                 switch (operators)
                 {
                     case "+":
-                        formula += (firstNumber + secondNumber + Random.Range(1, 4)).ToString();
+                        formula += (firstNumber + secondNumber + Random.Range(-1, 1)).ToString();
                         break;
                     case "-":
-                        formula += (firstNumber - secondNumber + Random.Range(1, 4)).ToString();
+                        formula += (firstNumber - secondNumber + Random.Range(-1, 1)).ToString();
                         break;
                     case "*":
-                        formula += (firstNumber * secondNumber + Random.Range(1, 4)).ToString();
+                        formula += (firstNumber * secondNumber + Random.Range(-1, 1)).ToString();
                         break;
                     case "/":
-                        formula += (Math.Round(firstNumber / secondNumber, 2) + +Random.Range(1, 4)).ToString();
+                        formula += (Math.Round(firstNumber / secondNumber, 2) + +Random.Range(-1, 1)).ToString();
                         break;
                 }
             }

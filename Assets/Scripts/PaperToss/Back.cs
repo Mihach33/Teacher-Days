@@ -8,7 +8,6 @@ public class Back : MonoBehaviour
     {
         gameObject.GetComponent<Button>().onClick.AddListener(() =>
         {
-            Cursor.visible = false;
             FindObjectOfType<SceneLoader>().LoadScene("SchoolNoCutScene");
         }); 
     }
