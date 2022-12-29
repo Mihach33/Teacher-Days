@@ -17,6 +17,7 @@ public class TimerScript : MonoBehaviour
         if (SceneManager.GetActiveScene().name.Equals("PlayGroundScene") || SceneManager.GetActiveScene().name.Equals("PlayGroundSceneNoTutor"))
         {
             lvl = PlayerPrefs.GetInt("Level", 1);
+            Debug.Log(lvl);
         }
         else
         {
@@ -29,8 +30,7 @@ public class TimerScript : MonoBehaviour
     {
         
         timerIsOn = true;
-        if (SceneManager.GetActiveScene().name.Equals("PlayGroundScene") ||
-            SceneManager.GetActiveScene().name.Equals("PlayGroundSceneNoTutor"))
+        if (SceneManager.GetActiveScene().name.Equals("PlayGroundScene") || SceneManager.GetActiveScene().name.Equals("PlayGroundSceneNoTutor"))
         {
             switch (lvl)
             {

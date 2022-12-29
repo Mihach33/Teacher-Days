@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-// MoveBehaviour inherits from GenericBehaviour. This class corresponds to basic walk and run behaviour, it is the default behaviour.
+
 public class MoveBehaviour : GenericBehaviour
 {
 	public float walkSpeed = 0.15f;                 // Default walk speed.
@@ -54,21 +54,21 @@ public class MoveBehaviour : GenericBehaviour
 	// Execute the idle and walk/run jump movements.
 	void JumpManagement()
 	{
-		// Start a new jump.
+	
 		if (jump && !behaviourManager.GetAnim.GetBool(jumpBool) && behaviourManager.IsGrounded())
 		{
-			// Set jump related parameters.
+			
 			behaviourManager.LockTempBehaviour(this.behaviourCode);
 			behaviourManager.GetAnim.SetBool(jumpBool, true);
-			// Is a locomotion jump?
+		
 			if (behaviourManager.GetAnim.GetFloat(speedFloat) > 0.1)
 			{
-				// Temporarily change player friction to pass through obstacles.
+				
 				GetComponent<CapsuleCollider>().material.dynamicFriction = 0f;
 				GetComponent<CapsuleCollider>().material.staticFriction = 0f;
-				// Remove vertical velocity to avoid "super jumps" on slope ends.
+				
 				RemoveVerticalVelocity();
-				// Set jump vertical impulse velocity.
+				
 				float velocity = 2f * Mathf.Abs(Physics.gravity.y) * jumpHeight;
 				velocity = Mathf.Sqrt(velocity);
 				behaviourManager.GetRigidBody.AddForce(Vector3.up * velocity, ForceMode.VelocityChange);
@@ -100,23 +100,15 @@ public class MoveBehaviour : GenericBehaviour
 	// Deal with the basic player movement
 	void MovementManagement(float horizontal, float vertical)
 	{
-		// On ground, obey gravity.
 		if (behaviourManager.IsGrounded())
 			behaviourManager.GetRigidBody.useGravity = true;
-
-		// Avoid takeoff when reached a slope end.
 		else if (!behaviourManager.GetAnim.GetBool(jumpBool) && behaviourManager.GetRigidBody.velocity.y > 0)
 		{
 			RemoveVerticalVelocity();
 		}
-
-		// Call function that deals with player orientation.
 		Rotating(horizontal, vertical);
-
-		// Set proper speed.
 		Vector2 dir = new Vector2(horizontal, vertical);
 		speed = Vector2.ClampMagnitude(dir, 1f).magnitude;
-		// This is for PC only, gamepads control speed via analog stick.
 		speedSeeker += Input.GetAxis("Mouse ScrollWheel");
 		speedSeeker = Mathf.Clamp(speedSeeker, walkSpeed, runSpeed);
 		speed *= speedSeeker;
@@ -124,7 +116,6 @@ public class MoveBehaviour : GenericBehaviour
 		{
 			speed = sprintSpeed;
 		}
-
 		behaviourManager.GetAnim.SetFloat(speedFloat, speed, speedDampTime, Time.deltaTime);
 	}
 
