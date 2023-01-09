@@ -25,27 +25,25 @@ public class DrawLine : MonoBehaviour
         width.gameObject.SetActive(false);
         linePoints = new List<Vector3>();
         timer = timeDelay;
-      
     }
 
     private void Update()
     {
         if (!_boardInteractComponent.canDraw) return;
-        
+
         var mousePos = GetMousePosition();
         if (mousePos == Vector3.zero) return;
-        
+
         if (Input.GetMouseButtonDown(0))
         {
-            
             newLine = new GameObject();
             newLine.transform.parent = parent.transform;
             drawLine = newLine.AddComponent<LineRenderer>();
             drawLine.material = _color;
             drawLine.startWidth = width.value;
             drawLine.endWidth = width.value;
-           
         }
+
         if (Input.GetMouseButton(0))
         {
             timer -= Time.deltaTime;
@@ -57,6 +55,7 @@ public class DrawLine : MonoBehaviour
                 timer = timeDelay;
             }
         }
+
         if (Input.GetMouseButtonUp(0))
         {
             linePoints.Clear();
@@ -71,8 +70,7 @@ public class DrawLine : MonoBehaviour
         {
             return hit.point;
         }
+
         return Vector3.zero;
     }
-
-   
 }

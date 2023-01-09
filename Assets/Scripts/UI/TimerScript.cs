@@ -1,5 +1,3 @@
-using System;
-using System.Diagnostics;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -8,13 +6,15 @@ using Debug = UnityEngine.Debug;
 public class TimerScript : MonoBehaviour
 {
     private TextMeshProUGUI _textMeshProUGUI;
-    private  float timeStart;
+    private float timeStart;
     private static bool timerIsOn;
     private int lvl;
     public int[] levels;
+
     void Awake()
     {
-        if (SceneManager.GetActiveScene().name.Equals("PlayGroundScene") || SceneManager.GetActiveScene().name.Equals("PlayGroundSceneNoTutor"))
+        if (SceneManager.GetActiveScene().name.Equals("PlayGroundScene") ||
+            SceneManager.GetActiveScene().name.Equals("PlayGroundSceneNoTutor"))
         {
             lvl = PlayerPrefs.GetInt("Level", 1);
             Debug.Log(lvl);
@@ -23,14 +23,15 @@ public class TimerScript : MonoBehaviour
         {
             timeStart = 1000;
         }
+
         _textMeshProUGUI = gameObject.GetComponent<TextMeshProUGUI>();
     }
 
     private void Start()
     {
-        
         timerIsOn = true;
-        if (SceneManager.GetActiveScene().name.Equals("PlayGroundScene") || SceneManager.GetActiveScene().name.Equals("PlayGroundSceneNoTutor"))
+        if (SceneManager.GetActiveScene().name.Equals("PlayGroundScene") ||
+            SceneManager.GetActiveScene().name.Equals("PlayGroundSceneNoTutor"))
         {
             switch (lvl)
             {
@@ -46,7 +47,6 @@ public class TimerScript : MonoBehaviour
                 case 4:
                     timeStart = levels[3];
                     break;
-
             }
         }
     }
@@ -66,6 +66,7 @@ public class TimerScript : MonoBehaviour
                 enabled = false;
                 return;
             }
+
             timeStart -= Time.deltaTime;
             float minutes = Mathf.FloorToInt(timeStart / 60);
             float seconds = Mathf.FloorToInt(timeStart % 60);

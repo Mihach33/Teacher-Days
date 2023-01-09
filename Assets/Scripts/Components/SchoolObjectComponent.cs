@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Components
 {
-    public class SchoolObjectComponent: MonoBehaviour
+    public class SchoolObjectComponent : MonoBehaviour
     {
         [SerializeField] private Animator _animator;
         [SerializeField] private string _animationKey;

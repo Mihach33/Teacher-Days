@@ -8,7 +8,7 @@ public class ChoosedItem : MonoBehaviour
     private bool isTrue;
     private bool selectedTrue;
     private bool isSelected;
-    
+
     public void SetIsTrue(bool a)
     {
         isTrue = a;
@@ -18,32 +18,34 @@ public class ChoosedItem : MonoBehaviour
     {
         selectedTrue = a;
     }
-    
+
     public bool CheckIfCorrect()
     {
         return isTrue == selectedTrue;
     }
+
     public void SetIsSelected(bool a)
     {
         isSelected = a;
     }
+
     public bool GetIsSelected()
     {
         return isSelected;
     }
-    
+
     public bool GetIsOn()
     {
         return isOn;
     }
-    
+
     public void SetIsOn(bool a)
     {
         isOn = a;
     }
+
     public bool GetSelectIsTrue()
-    {   
+    {
         return selectedTrue;
     }
-   
 }

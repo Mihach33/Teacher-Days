@@ -9,7 +9,6 @@ public class Back : MonoBehaviour
         gameObject.GetComponent<Button>().onClick.AddListener(() =>
         {
             FindObjectOfType<SceneLoader>().LoadScene("SchoolNoCutScene");
-        }); 
+        });
     }
-    
 }

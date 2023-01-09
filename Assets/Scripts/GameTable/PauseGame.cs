@@ -2,13 +2,14 @@ using UI;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PauseGame: MonoBehaviour
+public class PauseGame : MonoBehaviour
 {
     [SerializeField] private GameObject pauseCanvas;
     [SerializeField] private Button exitBtn;
     [SerializeField] private Button continueBtn;
 
     private bool isPauseFreeze;
+
     private void Start()
     {
         isPauseFreeze = false;
@@ -19,7 +20,7 @@ public class PauseGame: MonoBehaviour
                 TimerScript.SetTimer(true);
             }
         );
-        exitBtn.onClick.AddListener(()=>FindObjectOfType<SceneLoader>().LoadScene("MainMenu"));
+        exitBtn.onClick.AddListener(() => FindObjectOfType<SceneLoader>().LoadScene("MainMenu"));
     }
 
     void Update()
@@ -29,5 +30,4 @@ public class PauseGame: MonoBehaviour
             pauseCanvas.SetActive(!pauseCanvas.activeSelf);
         }
     }
-    
 }

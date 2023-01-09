@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -18,9 +17,9 @@ public class CountryClicker : MonoBehaviour
     [SerializeField] private GameObject[] _images;
     [SerializeField] private GameObject gameWonCanvas;
     [SerializeField] private GameObject gameLostCanvas;
-    private Boolean playRedAnimation = false;
-    private Boolean playRedReverseAnimation = false;
-    private Boolean playGreenAnimation = false;
+    private Boolean playRedAnimation;
+    private Boolean playRedReverseAnimation;
+    private Boolean playGreenAnimation;
 
     private Boolean redAnimationPlayed = false;
     private float animationTime = 10000f;

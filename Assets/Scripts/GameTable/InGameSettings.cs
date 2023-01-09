@@ -1,4 +1,3 @@
-using UI;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,7 +7,7 @@ namespace Script.GameTable
     {
         [SerializeField] private GameObject _settingsPop;
         [SerializeField] private GameObject _pausePop;
-      
+
         [SerializeField] private Button _settingsOpenButton;
         [SerializeField] private Button _backToMainButton;
 
@@ -23,8 +22,5 @@ namespace Script.GameTable
         {
             _settingsPop.SetActive(!_settingsPop.activeSelf);
         }
-
-      
-        
     }
 }

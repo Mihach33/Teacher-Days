@@ -1,8 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using Player;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
 public class PlayerInteract : MonoBehaviour
 {
@@ -20,5 +17,4 @@ public class PlayerInteract : MonoBehaviour
     {
         _interactionCheck.Check();
     }
-    
 }

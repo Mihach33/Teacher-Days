@@ -6,6 +6,7 @@ public class ClearDrawing : MonoBehaviour
     private Button _clearButton;
     [SerializeField] GameObject parent;
     private LineRenderer[] prefabs;
+
     private void Start()
     {
         _clearButton = gameObject.GetComponent<Button>();
@@ -18,5 +19,4 @@ public class ClearDrawing : MonoBehaviour
             }
         });
     }
-    
 }

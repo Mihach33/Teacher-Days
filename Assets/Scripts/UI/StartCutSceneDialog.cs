@@ -5,6 +5,7 @@ public class StartCutSceneDialog : MonoBehaviour
 {
     [SerializeField] private DialogueScript dialogueScript;
     [SerializeField] private SceneLoader sceneLoader;
+
     void Start()
     {
         dialogueScript.StartDialogueCoroutine();

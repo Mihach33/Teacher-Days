@@ -15,19 +15,7 @@ public class Pause : MonoBehaviour
     {
         _isPauseFreeze = false;
         pauseCanvas.SetActive(false);
-        continueBtn.onClick.AddListener(() =>
-            {
-                // pauseCanvas.SetActive(false);
-                // Time.timeScale = 1;
-                // if (cam != null)
-                // {
-                //     cam.smooth = 10;
-                //     cam.horizontalAimingSpeed = 6;
-                //     cam.verticalAimingSpeed = 6;
-                // }
-                // _isPauseFreeze = false;
-                SetPause();
-            }
+        continueBtn.onClick.AddListener(() => { SetPause(); }
         );
         exitBtn.onClick.AddListener(() =>
         {
@@ -60,6 +48,7 @@ public class Pause : MonoBehaviour
         {
             return 0;
         }
+
         return 1;
     }
 
@@ -69,6 +58,7 @@ public class Pause : MonoBehaviour
         {
             SetPause();
         }
+
         if (cam != null)
             Cursor.visible = _isPauseFreeze;
     }

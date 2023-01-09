@@ -29,7 +29,7 @@ namespace GameTable
         private bool anotherIsOn;
         private Button currentButton;
         private static Button[] buttons = new Button[5];
-        private string[] _operators = {"+", "-", "*", "/"};
+        private string[] _operators = { "+", "-", "*", "/" };
         int[] numbers = new int [buttons.Length * 2];
         int[] numbersComplex = new int [buttons.Length * 4];
         private static readonly int FillStar = Animator.StringToHash("FillStar");
@@ -136,6 +136,7 @@ namespace GameTable
                 yield return new WaitForSeconds(0.3f);
                 stars[2].SetTrigger(FillStar);
             }
+
             workbookCanvas.SetActive(false);
         }
 
@@ -148,20 +149,20 @@ namespace GameTable
                 numbers[i] = Random.Range(1, 6);
             }
 
-            var firstNumber = (double) numbers[Random.Range(0, numbers.Length)];
-            formula += firstNumber != 1 ? (int) firstNumber + "x² " : "x² ";
+            var firstNumber = (double)numbers[Random.Range(0, numbers.Length)];
+            formula += firstNumber != 1 ? (int)firstNumber + "x² " : "x² ";
 
             var operator1 = _operators[Random.Range(0, 2)];
             formula += operator1 + " ";
 
-            var secondNumber = (double) numbers[Random.Range(0, numbers.Length)];
-            formula += secondNumber != 1 ? (int) secondNumber + "x² " : "x ";
+            var secondNumber = (double)numbers[Random.Range(0, numbers.Length)];
+            formula += secondNumber != 1 ? (int)secondNumber + "x² " : "x ";
 
             var operator2 = _operators[Random.Range(0, 2)];
             formula += operator2 + " ";
 
-            var thirdNumber = (double) numbers[Random.Range(0, numbers.Length)];
-            formula += (int) thirdNumber + "\n";
+            var thirdNumber = (double)numbers[Random.Range(0, numbers.Length)];
+            formula += (int)thirdNumber + "\n";
 
             double p, q, D, root1, root2, result;
 
@@ -204,19 +205,19 @@ namespace GameTable
                 numbers[i] = Random.Range(1, 12);
             }
 
-            var firstNumber = (double) numbers[Random.Range(0, numbers.Length)];
-            formula += (int) firstNumber + " ";
+            var firstNumber = (double)numbers[Random.Range(0, numbers.Length)];
+            formula += (int)firstNumber + " ";
 
             var operators = _operators[Random.Range(0, _operators.Length)];
             formula += operators + " ";
 
-            var secondNumber = (double) numbers[Random.Range(0, numbers.Length)];
+            var secondNumber = (double)numbers[Random.Range(0, numbers.Length)];
             while (secondNumber > firstNumber)
             {
                 secondNumber = numbers[Random.Range(0, numbers.Length)];
             }
 
-            formula += (int) secondNumber + " = ";
+            formula += (int)secondNumber + " = ";
 
             if (Random.Range(0, 2) == 1)
             {
@@ -269,20 +270,20 @@ namespace GameTable
                 numbersComplex[i] = Random.Range(3, 20);
             }
 
-            var firstNumber = (double) numbersComplex[Random.Range(0, numbersComplex.Length)];
-            formula += (int) firstNumber + " ";
+            var firstNumber = (double)numbersComplex[Random.Range(0, numbersComplex.Length)];
+            formula += (int)firstNumber + " ";
             var operatorFirst = _operators[Random.Range(0, _operators.Length)];
             formula += operatorFirst + " ";
-            var secondNumber = (double) numbersComplex[Random.Range(0, numbersComplex.Length)];
-            formula += (int) secondNumber + " ";
+            var secondNumber = (double)numbersComplex[Random.Range(0, numbersComplex.Length)];
+            formula += (int)secondNumber + " ";
             var operatorSecond = _operators[Random.Range(0, _operators.Length)];
             formula += operatorSecond + " ";
-            var thirdNumber = (double) numbersComplex[Random.Range(0, numbersComplex.Length)];
-            formula += (int) thirdNumber + " ";
+            var thirdNumber = (double)numbersComplex[Random.Range(0, numbersComplex.Length)];
+            formula += (int)thirdNumber + " ";
             var operatorThird = _operators[Random.Range(0, _operators.Length)];
             formula += operatorThird + " ";
-            var fourthNumber = (double) numbersComplex[Random.Range(0, numbersComplex.Length)];
-            formula += (int) fourthNumber;
+            var fourthNumber = (double)numbersComplex[Random.Range(0, numbersComplex.Length)];
+            formula += (int)fourthNumber;
             ExpressionEvaluator.Evaluate(formula, out double result);
             result = Math.Round(result, 2);
 
@@ -303,16 +304,16 @@ namespace GameTable
                 numbersComplex[i] = Random.Range(1, 20);
             }
 
-            var firstNumber = (double) numbersComplex[Random.Range(0, numbersComplex.Length)];
-            formula += (int) firstNumber + "/";
-            var secondNumber = (double) numbersComplex[Random.Range(0, numbersComplex.Length)];
-            formula += (int) secondNumber + " ";
+            var firstNumber = (double)numbersComplex[Random.Range(0, numbersComplex.Length)];
+            formula += (int)firstNumber + "/";
+            var secondNumber = (double)numbersComplex[Random.Range(0, numbersComplex.Length)];
+            formula += (int)secondNumber + " ";
             var firstOperator = _operators[Random.Range(0, _operators.Length)];
             formula += firstOperator + " ";
-            var thirdNumber = (double) numbersComplex[Random.Range(0, numbersComplex.Length)];
-            formula += (int) thirdNumber + "/";
-            var fourthNumber = (double) numbersComplex[Random.Range(0, numbersComplex.Length)];
-            formula += (int) fourthNumber;
+            var thirdNumber = (double)numbersComplex[Random.Range(0, numbersComplex.Length)];
+            formula += (int)thirdNumber + "/";
+            var fourthNumber = (double)numbersComplex[Random.Range(0, numbersComplex.Length)];
+            formula += (int)fourthNumber;
             ExpressionEvaluator.Evaluate(formula, out double result);
             result = Math.Round(result, 2);
             Fraction fraction = new Fraction();
@@ -325,7 +326,7 @@ namespace GameTable
                 Debug.Log(temp);
             }
 
-            fraction.numerator = (int) (checkForResult * 100);
+            fraction.numerator = (int)(checkForResult * 100);
             fraction.denominator = 100;
             fraction = ToReduce(fraction);
             if (temp >= 1)

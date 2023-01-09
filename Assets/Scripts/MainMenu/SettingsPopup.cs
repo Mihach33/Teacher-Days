@@ -16,8 +16,8 @@ public class SettingsPopup : MonoBehaviour
         _settingsOpenButton.onClick.AddListener(SetSettings);
         _backToMainButton.onClick.AddListener(SetSettings);
     }
-    
-    
+
+
     private void SetSettings()
     {
         TurnButtons();

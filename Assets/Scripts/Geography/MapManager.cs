@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MapManager : MonoBehaviour
@@ -10,16 +8,19 @@ public class MapManager : MonoBehaviour
     public int limitx2;
     public int limity1;
     public int limity2;
+
     public void GetOffset()
+    {
+        offset = _rectTransform.position - Input.mousePosition;
+    }
+
+    public void MoveObject()
+    {
+        Debug.Log(Input.mousePosition.x + offset.x);
+        if (Input.mousePosition.x + offset.x > limitx && Input.mousePosition.y + offset.y > limity1 &&
+            Input.mousePosition.y + offset.y < limity2 && Input.mousePosition.x + offset.x < limitx2)
         {
-            offset = _rectTransform.position - Input.mousePosition;
+            _rectTransform.position = Input.mousePosition + offset;
         }
-        public void MoveObject()
-        {
-            Debug.Log(Input.mousePosition.x + offset.x);
-           if (Input.mousePosition.x + offset.x > limitx && Input.mousePosition.y + offset.y > limity1 && Input.mousePosition.y + offset.y < limity2 && Input.mousePosition.x + offset.x < limitx2)
-           {
-                _rectTransform.position = Input.mousePosition + offset;
-            }       
-        }
+    }
 }

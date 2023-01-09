@@ -6,14 +6,11 @@ public class Toss : MonoBehaviour
 {
     float clickTimeStart, clickTimeFinish, timeInterval;
 
-    [SerializeField]
-    float throwForceInXandY = 10f;
+    [SerializeField] float throwForceInXandY = 10f;
 
-    [SerializeField]
-    float throwForceInZ = 20f;
+    [SerializeField] float throwForceInZ = 20f;
 
-    [SerializeField]
-    Transform trashPosition;
+    [SerializeField] Transform trashPosition;
 
     private Rigidbody rb;
     private Vector3 initTrashPos;
@@ -22,24 +19,25 @@ public class Toss : MonoBehaviour
     private Vector2 _mouseFinalPosition;
     private Vector2 _mouseInterval;
     private bool _isPressed;
-  
+
     [SerializeField] private AudioSource swipe;
-    
-    void Awake () {
+
+    void Awake()
+    {
         rb = GetComponent<Rigidbody>();
         initPosition = transform.position;
         rb.useGravity = false;
         initTrashPos = trashPosition.position;
         SetTrashPosition();
     }
-	
-    void Update () {
+
+    void Update()
+    {
         MoveBallIfSwiped();
     }
 
     void SetTrashPosition()
     {
-        
         var x = initTrashPos.x;
         var z = initPosition.z;
         var randomX = Random.Range(x - 1.0f, x + 2.0f);
@@ -51,7 +49,6 @@ public class Toss : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            
             clickTimeStart = Time.time;
             _isPressed = true;
             _mouseInitPosition = Input.mousePosition;
@@ -65,14 +62,13 @@ public class Toss : MonoBehaviour
             _mouseInterval = (_mouseFinalPosition - _mouseInitPosition) * 0.6f;
             var speedForce = Math.Abs(_mouseInterval.y) * timeInterval * 0.3f;
             var speedDirection = _mouseInterval.x * timeInterval * 1.5f;
-            
+
             rb.isKinematic = false;
             swipe.Play();
             rb.AddForce(speedForce * throwForceInZ, speedForce * throwForceInXandY, -speedDirection);
             rb.useGravity = true;
             Invoke("ReloadBall", 2);
         }
-
     }
 
     void ReloadBall()
@@ -83,4 +79,4 @@ public class Toss : MonoBehaviour
         rb.velocity = Vector3.zero;
         SetTrashPosition();
     }
-} 
+}

@@ -11,7 +11,7 @@ public class DialogueScript : MonoBehaviour
     [SerializeField] private float delay1;
     private string currentString = "";
     private static bool isDialogueFinish;
-    
+
     public void StartDialogueCoroutine()
     {
         gameObject.SetActive(true);
@@ -32,27 +32,30 @@ public class DialogueScript : MonoBehaviour
         {
             for (int j = 0; j < t.Length; j++)
             {
-                dialogue.text = t.Substring(0, j);;
+                dialogue.text = t.Substring(0, j);
+                ;
                 yield return new WaitForSeconds(delay);
             }
+
             yield return new WaitForSeconds(delay1);
         }
 
         isDialogueFinish = true;
-        Invoke("Finish",1f);
+        Invoke("Finish", 1f);
     }
 
     private void Finish()
     {
         gameObject.SetActive(false);
     }
+
     public static bool GetIsDialogueFinish()
     {
         return isDialogueFinish;
     }
+
     public static void SetIsDialogueFinish(bool isFinish)
     {
         isDialogueFinish = isFinish;
     }
 }
-
