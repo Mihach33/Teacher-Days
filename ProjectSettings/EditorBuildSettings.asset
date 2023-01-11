@@ -5,9 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 2cda990e2423bbf4892e6590ba056729
@@ -28,7 +25,7 @@ EditorBuildSettings:
     guid: 27b6b85f0d07942d487736e10d1d83b2
   - enabled: 1
     path: Assets/Scenes/SchoolNoCutScene.unity
-    guid: 701768e9df9dc470596fe799586d272b
+    guid: 4cf40418ee56daa47abccc868851cb82
   - enabled: 1
     path: Assets/Scenes/GeoGuessAfrica.unity
     guid: 792fb088599124558a33401661c7e924
@@ -41,7 +38,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GeoGuessMenu.unity
     guid: 9f30bc16ac9c74df783e842757292b58
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   m_configObjects: {}

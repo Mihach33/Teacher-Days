@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Data;
 using TMPro;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
@@ -284,15 +283,38 @@ namespace GameTable
             formula += operatorThird + " ";
             var fourthNumber = (double)numbersComplex[Random.Range(0, numbersComplex.Length)];
             formula += (int)fourthNumber;
-            ExpressionEvaluator.Evaluate(formula, out double result);
-            result = Math.Round(result, 2);
+
+            var expression = new SimpleExpressionEvaluator.ExpressionEvaluator();
+            double result = (double)expression.Evaluate(formula);
 
             var checkForResult = result + Random.Range(-2, 2);
-            formula += " = " + checkForResult;
+            formula += " = " + Math.Round(checkForResult, 2);
 
             currentButton.GetComponent<ChoosedItem>().SetIsTrue(checkForResult == result);
 
             return formula;
+        }
+
+        private bool IsComplexOperator(string oper)
+        {
+            return (oper.Equals("*") || oper.Equals("/"));
+        }
+
+        private double GetNumberWithOperator(double firstNumber, double secondNumber, string operators)
+        {
+            switch (operators)
+            {
+                case "+":
+                    return (firstNumber + secondNumber);
+                case "-":
+                    return (firstNumber - secondNumber);
+                case "*":
+                    return (firstNumber * secondNumber);
+                case "/":
+                    return Math.Round(firstNumber / secondNumber, 2);
+            }
+
+            return 0.0;
         }
 
         private string GetFractionFormula()
@@ -307,6 +329,7 @@ namespace GameTable
             var firstNumber = (double)numbersComplex[Random.Range(0, numbersComplex.Length)];
             formula += (int)firstNumber + "/";
             var secondNumber = (double)numbersComplex[Random.Range(0, numbersComplex.Length)];
+            var result1 = firstNumber / secondNumber;
             formula += (int)secondNumber + " ";
             var firstOperator = _operators[Random.Range(0, _operators.Length)];
             formula += firstOperator + " ";
@@ -314,8 +337,10 @@ namespace GameTable
             formula += (int)thirdNumber + "/";
             var fourthNumber = (double)numbersComplex[Random.Range(0, numbersComplex.Length)];
             formula += (int)fourthNumber;
-            ExpressionEvaluator.Evaluate(formula, out double result);
-            result = Math.Round(result, 2);
+
+            var result2 = thirdNumber / fourthNumber;
+            
+            double result = Math.Round(GetNumberWithOperator(result1, result2, firstOperator), 2);
             Fraction fraction = new Fraction();
             var checkForResult = result + Random.Range(-2, 2);
             double temp = 0;
