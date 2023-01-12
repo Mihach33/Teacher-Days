@@ -45,11 +45,6 @@ public class BasicBehaviour : MonoBehaviour
 	// Get current default behaviour.
 	public int GetDefaultBehaviour {  get { return defaultBehaviour; } }
 
-	private void Start()
-	{
-		Cursor.visible = false;
-	}
-
 	void Awake ()
 	{
 		// Set up the references.

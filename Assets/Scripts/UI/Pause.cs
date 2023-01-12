@@ -1,3 +1,4 @@
+using Components;
 using UI;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,6 +9,8 @@ public class Pause : MonoBehaviour
     [SerializeField] private Button exitBtn;
     [SerializeField] private Button continueBtn;
     [SerializeField] private ThirdPersonOrbitCamBasic cam;
+    [SerializeField] private BoardInteractComponent board;
+
 
     private bool _isPauseFreeze;
 
@@ -59,13 +62,16 @@ public class Pause : MonoBehaviour
             SetPause();
         }
 
-        if (cam != null)
+        if (cam != null && !board.canDraw)
             Cursor.visible = _isPauseFreeze;
     }
 
     private void SetPause()
     {
-        pauseCanvas.SetActive(!pauseCanvas.activeSelf);
-        Time.timeScale = (cam != null) ? GetIsPause() : GetIsPauseWithoutCamera();
+        if (!board.canDraw)
+        {
+            pauseCanvas.SetActive(!pauseCanvas.activeSelf);
+            Time.timeScale = (cam != null) ? GetIsPause() : GetIsPauseWithoutCamera();
+        }
     }
 }

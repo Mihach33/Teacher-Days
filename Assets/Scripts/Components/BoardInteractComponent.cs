@@ -29,12 +29,12 @@ namespace Components
 
         public void ChangeView()
         {
-            Cursor.visible = !Cursor.visible;
             slider.SetActive(!slider.activeSelf);
             _clearBtn.SetActive(!_clearBtn.activeSelf);
             _boardCamera.enabled = !_boardCamera.enabled;
             _mainCamera.enabled = !_mainCamera.enabled;
             canDraw = !canDraw;
+            Cursor.visible = canDraw;
             _player.SetActive(!_player.activeSelf);
         }
     }
