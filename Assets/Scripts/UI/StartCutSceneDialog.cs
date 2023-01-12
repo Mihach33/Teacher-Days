@@ -16,6 +16,7 @@ public class StartCutSceneDialog : MonoBehaviour
         if (DialogueScript.GetIsDialogueFinish())
         {
             sceneLoader.LoadScene("PlayGroundSceneNoTutor");
+            DialogueScript.SetIsDialogueFinish(false);
         }
     }
 }

@@ -33,7 +33,6 @@ public class DialogueScript : MonoBehaviour
             for (int j = 0; j < t.Length; j++)
             {
                 dialogue.text = t.Substring(0, j);
-                ;
                 yield return new WaitForSeconds(delay);
             }
 
