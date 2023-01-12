@@ -68,7 +68,12 @@ public class Pause : MonoBehaviour
 
     private void SetPause()
     {
-        if (!board.canDraw)
+        if (board == null)
+        {
+            pauseCanvas.SetActive(!pauseCanvas.activeSelf);
+            Time.timeScale = (cam != null) ? GetIsPause() : GetIsPauseWithoutCamera();
+        }
+        else if (!board.canDraw)
         {
             pauseCanvas.SetActive(!pauseCanvas.activeSelf);
             Time.timeScale = (cam != null) ? GetIsPause() : GetIsPauseWithoutCamera();

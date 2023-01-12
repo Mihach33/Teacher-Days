@@ -415,7 +415,7 @@ namespace GameTable
             var expression = new SimpleExpressionEvaluator.ExpressionEvaluator();
             double result = (double)expression.Evaluate(formula);
 
-            var checkForResult = Math.Round(Convert.ToDouble(result.ToString()), 2) + Random.Range(-2, 2);
+            var checkForResult = Math.Round(result, 2) + Random.Range(-2, 2);
             formula += " = " + checkForResult;
 
             return formula;
