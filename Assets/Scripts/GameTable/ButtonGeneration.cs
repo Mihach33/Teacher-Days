@@ -80,7 +80,21 @@ namespace GameTable
 
         private IEnumerator CheckResults()
         {
-            PlayerPrefs.SetInt(levelKey, ++lvl);
+            if (lvl == 5)
+            {
+                PlayerPrefs.SetInt("IsGameComplete",1);
+               
+            }
+
+            if ( PlayerPrefs.GetInt("IsGameComplete",0) == 1)
+            {
+                PlayerPrefs.SetInt(levelKey,Random.Range(1,5));
+            }
+            else
+            {
+                PlayerPrefs.SetInt(levelKey, ++lvl);
+            }
+          
             double rightAnswers = 0;
             double allAnswers = 0;
             foreach (Button button in buttons)

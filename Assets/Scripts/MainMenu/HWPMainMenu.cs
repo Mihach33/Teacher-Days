@@ -16,7 +16,7 @@ public class HWPMainMenu : MonoBehaviour
         buttonExit.onClick.AddListener(() => { Application.Quit(); });
         buttonStart.onClick.AddListener(() =>
         {
-            PlayerPrefs.SetInt(levelKey, 0);
+            PlayerPrefs.DeleteKey(levelKey);
             FindObjectOfType<SceneLoader>().LoadScene("School");
         });
         continueBtn.onClick.AddListener(() => { FindObjectOfType<SceneLoader>().LoadScene("SchoolNoCutScene"); });
