@@ -6369,7 +6369,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1024674707
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9123,6 +9123,7 @@ MonoBehaviour:
   exitBtn: {fileID: 93798915}
   continueBtn: {fileID: 1486515762}
   cam: {fileID: 739230869975415865}
+  board: {fileID: 0}
 --- !u!4 &1259001553
 Transform:
   m_ObjectHideFlags: 0
