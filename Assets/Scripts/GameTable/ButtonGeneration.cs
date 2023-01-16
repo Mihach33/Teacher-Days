@@ -55,7 +55,7 @@ namespace GameTable
                 button.gameObject.AddComponent<ChoosedItem>();
                 button.GetComponent<ChoosedItem>().SetIsOn(false);
                 currentButton = button;
-                switch (2)
+                switch (lvl)
                 {
                     case 0:
                         button.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text =
