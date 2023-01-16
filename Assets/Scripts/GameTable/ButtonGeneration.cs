@@ -12,7 +12,8 @@ namespace GameTable
     public class ButtonGeneration : MonoBehaviour
     {
         [SerializeField] private Button _buttonPrefab;
-        [SerializeField] private GameObject _parent;
+        [SerializeField] private GameObject _parent1;
+        [SerializeField] private GameObject _parent2;
         [SerializeField] private Button trueButton;
         [SerializeField] private Button falseButton;
         [SerializeField] private Button resultsButton;
@@ -27,7 +28,7 @@ namespace GameTable
         private string levelKey = "Level";
         private bool anotherIsOn;
         private Button currentButton;
-        private static Button[] buttons = new Button[5];
+        private static Button[] buttons = new Button[12];
         private string[] _operators = { "+", "-", "*", "/" };
         int[] numbers = new int [buttons.Length * 2];
         int[] numbersComplex = new int [buttons.Length * 4];
@@ -36,14 +37,21 @@ namespace GameTable
         private void Start()
         {
             lvl = PlayerPrefs.GetInt(levelKey, 0);
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 12; i++)
             {
                 buttons[i] = Instantiate(_buttonPrefab);
             }
 
+            bool isEven = false;
+
             foreach (Button button in buttons)
             {
-                button.transform.SetParent(_parent.transform);
+                if (isEven)
+                    button.transform.SetParent(_parent1.transform);
+                else
+                    button.transform.SetParent(_parent2.transform);
+                isEven = !isEven;
+                
                 button.transform.localScale = new Vector3(1, 1, 1);
                 button.gameObject.AddComponent<ChoosedItem>();
                 button.GetComponent<ChoosedItem>().SetIsOn(false);
@@ -415,7 +423,7 @@ namespace GameTable
             var expression = new SimpleExpressionEvaluator.ExpressionEvaluator();
             double result = (double)expression.Evaluate(formula);
 
-            var checkForResult = Math.Round(Convert.ToDouble(result.ToString()), 2) + Random.Range(-2, 2);
+            var checkForResult = Math.Round(result, 2) + Random.Range(-2, 2);
             formula += " = " + checkForResult;
 
             return formula;
