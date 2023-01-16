@@ -1,6 +1,5 @@
 using System;
 using System.Collections;
-using System.Data;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -56,7 +55,7 @@ namespace GameTable
                 button.gameObject.AddComponent<ChoosedItem>();
                 button.GetComponent<ChoosedItem>().SetIsOn(false);
                 currentButton = button;
-                switch (lvl)
+                switch (2)
                 {
                     case 0:
                         button.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text =
@@ -88,21 +87,15 @@ namespace GameTable
 
         private IEnumerator CheckResults()
         {
-            if (lvl == 5)
-            {
-                PlayerPrefs.SetInt("IsGameComplete",1);
-               
-            }
+            if (lvl == 4)
+                PlayerPrefs.SetInt("IsGameComplete", 1);
+                
 
-            if ( PlayerPrefs.GetInt("IsGameComplete",0) == 1)
-            {
-                PlayerPrefs.SetInt(levelKey,Random.Range(1,5));
-            }
+            if (PlayerPrefs.GetInt("IsGameComplete",0) != 0)
+                PlayerPrefs.SetInt(levelKey,Random.Range(0,4));
             else
-            {
                 PlayerPrefs.SetInt(levelKey, ++lvl);
-            }
-          
+
             double rightAnswers = 0;
             double allAnswers = 0;
             foreach (Button button in buttons)
@@ -351,7 +344,6 @@ namespace GameTable
             var firstNumber = (double)numbersComplex[Random.Range(0, numbersComplex.Length)];
             formula += (int)firstNumber + "/";
             var secondNumber = (double)numbersComplex[Random.Range(0, numbersComplex.Length)];
-            var result1 = firstNumber / secondNumber;
             formula += (int)secondNumber + " ";
             var firstOperator = _operators[Random.Range(0, _operators.Length)];
             formula += firstOperator + " ";
@@ -360,6 +352,7 @@ namespace GameTable
             var fourthNumber = (double)numbersComplex[Random.Range(0, numbersComplex.Length)];
             formula += (int)fourthNumber;
 
+            var result1 = firstNumber / secondNumber;
             var result2 = thirdNumber / fourthNumber;
             
             double result = Math.Round(GetNumberWithOperator(result1, result2, firstOperator), 2);
@@ -376,13 +369,20 @@ namespace GameTable
             fraction.numerator = (int)(checkForResult * 100);
             fraction.denominator = 100;
             fraction = ToReduce(fraction);
+            string fr = "";
+            if (fraction.numerator < 0)
+                fr = " - " + Math.Abs(fraction.numerator);
+            else
+                fr = " + " + Math.Abs(fraction.numerator);
+
+
             if (temp >= 1)
             {
-                formula += " = " + temp + "+" + fraction.numerator + "/" + fraction.denominator;
+                formula += " = " + temp + fr + "/" + fraction.denominator;
             }
             else
             {
-                formula += " = " + fraction.numerator + "/" + fraction.denominator;
+                formula += " = " + fr + "/" + fraction.denominator;
             }
 
             currentButton.GetComponent<ChoosedItem>().SetIsTrue(checkForResult == result);

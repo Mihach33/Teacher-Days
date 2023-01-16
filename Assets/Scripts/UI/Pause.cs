@@ -10,6 +10,7 @@ public class Pause : MonoBehaviour
     [SerializeField] private Button continueBtn;
     [SerializeField] private ThirdPersonOrbitCamBasic cam;
     [SerializeField] private BoardInteractComponent board;
+    [SerializeField] private GameObject gameOverCanvas;
 
 
     private bool _isPauseFreeze;
@@ -62,8 +63,14 @@ public class Pause : MonoBehaviour
             SetPause();
         }
 
-        if (cam != null && !board.canDraw)
+        if (gameOverCanvas != null && gameOverCanvas.activeSelf)
+        {
+            Cursor.visible = true;
+        }
+        else if (cam != null && !board.canDraw)
+        {
             Cursor.visible = _isPauseFreeze;
+        }
     }
 
     private void SetPause()

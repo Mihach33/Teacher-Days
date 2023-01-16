@@ -9,6 +9,7 @@ public class HWPMainMenu : MonoBehaviour
     [SerializeField] private Button continueBtn;
     [SerializeField] private Button buttonExit;
     private string levelKey = "Level";
+    private string gameCompleteKey = "IsGameComplete";
 
     void Start()
     {
@@ -17,6 +18,7 @@ public class HWPMainMenu : MonoBehaviour
         buttonStart.onClick.AddListener(() =>
         {
             PlayerPrefs.DeleteKey(levelKey);
+            PlayerPrefs.DeleteKey(gameCompleteKey);
             FindObjectOfType<SceneLoader>().LoadScene("School");
         });
         continueBtn.onClick.AddListener(() => { FindObjectOfType<SceneLoader>().LoadScene("SchoolNoCutScene"); });

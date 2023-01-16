@@ -3526,6 +3526,67 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &510559851
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 510559852}
+  - component: {fileID: 510559853}
+  m_Layer: 0
+  m_Name: GridLayout (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &510559852
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510559851}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1988508960}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 341, y: -24}
+  m_SizeDelta: {x: 711.435, y: 946.73}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &510559853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510559851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 10
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_StartCorner: 0
+  m_StartAxis: 1
+  m_CellSize: {x: 704, y: 50}
+  m_Spacing: {x: 0, y: 100}
+  m_Constraint: 0
+  m_ConstraintCount: 2
 --- !u!1 &525152292
 GameObject:
   m_ObjectHideFlags: 0
@@ -5242,21 +5303,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c26b60bcc3ac4dfc9cf10215e4873727, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animator: {fileID: 706026152}
-  _firstStack:
-  - {fileID: 1987841234}
-  - {fileID: 1183048263}
-  - {fileID: 1098672722}
-  - {fileID: 1282666015}
-  _secondStack:
-  - {fileID: 1090679427}
-  - {fileID: 2105714783}
-  - {fileID: 1276837595}
-  - {fileID: 1565850949}
-  _goToNextFormulas: {fileID: 1768194061}
-  _goToPreviousFormulas: {fileID: 227880670}
-  slideForward: {fileID: 0}
-  slideBack: {fileID: 0}
 --- !u!1 &767226564
 GameObject:
   m_ObjectHideFlags: 0
@@ -5549,7 +5595,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -20.617188, y: 16.638}
+  m_AnchoredPosition: {x: -20.617188, y: 16.63794}
   m_SizeDelta: {x: -343.037, y: -133.276}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &833244879
@@ -8402,7 +8448,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 59.238, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 12.5789795, y: -228}
+  m_AnchoredPosition: {x: 12.579102, y: -228}
   m_SizeDelta: {x: 219.428, y: -216.133}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1283277849
@@ -10489,7 +10535,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -368.62, y: -87.362}
+  m_AnchoredPosition: {x: -368.62, y: -25}
   m_SizeDelta: {x: 711.435, y: 946.73}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1721488592
@@ -10530,7 +10576,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _buttonPrefab: {fileID: 901212007097395086, guid: 720046d1e341b4ea3bdb9ea2f2b3f47d,
     type: 3}
-  _parent: {fileID: 1721488590}
+  _parent1: {fileID: 1721488590}
+  _parent2: {fileID: 510559851}
   trueButton: {fileID: 271328990}
   falseButton: {fileID: 170642665}
   resultsButton: {fileID: 199510316}
@@ -10577,7 +10624,7 @@ RectTransform:
   - {fileID: 170642664}
   - {fileID: 199510315}
   m_Father: {fileID: 1988508960}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
@@ -12003,6 +12050,7 @@ RectTransform:
   - {fileID: 833244878}
   - {fileID: 2075681599}
   - {fileID: 1721488591}
+  - {fileID: 510559852}
   - {fileID: 1746901962}
   m_Father: {fileID: 88565223}
   m_RootOrder: 1

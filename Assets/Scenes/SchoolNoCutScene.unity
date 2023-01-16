@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.8253557, g: 0.6470909, b: 0.63733554, a: 1}
+  m_IndirectSpecularColor: {r: 0.825355, g: 0.6470897, b: 0.63733363, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -12531,6 +12531,7 @@ MonoBehaviour:
   continueBtn: {fileID: 1978445253}
   cam: {fileID: 739230869975415865}
   board: {fileID: 1939498602}
+  gameOverCanvas: {fileID: 657728365}
 --- !u!4 &1259001553
 Transform:
   m_ObjectHideFlags: 0
