@@ -92,7 +92,7 @@ namespace GameTable
                 
 
             if (PlayerPrefs.GetInt("IsGameComplete",0) != 0)
-                PlayerPrefs.SetInt(levelKey,Random.Range(0,4));
+                PlayerPrefs.SetInt(levelKey,Random.Range(1,4));
             else
                 PlayerPrefs.SetInt(levelKey, ++lvl);
 
@@ -111,7 +111,7 @@ namespace GameTable
 
             rightAnswersText.text = rightAnswers.ToString();
             falseAnswersText.text = (allAnswers - rightAnswers).ToString();
-            var result = rightAnswers / allAnswers * 100;
+            var result = Math.Round(rightAnswers / allAnswers * 100, 2);
             allAnswer.text = result + "%";
             // workbookCanvas.SetActive(false);
             trueButton.gameObject.SetActive(false);
@@ -233,44 +233,27 @@ namespace GameTable
 
             formula += (int)secondNumber + " = ";
 
-            if (Random.Range(0, 2) == 1)
+            var result = 0.0;
+
+            switch (operators)
             {
-                currentButton.GetComponent<ChoosedItem>().SetIsTrue(true);
-                switch (operators)
-                {
-                    case "+":
-                        formula += (firstNumber + secondNumber).ToString();
-                        break;
-                    case "-":
-                        formula += (firstNumber - secondNumber).ToString();
-                        break;
-                    case "*":
-                        formula += (firstNumber * secondNumber).ToString();
-                        break;
-                    case "/":
-                        formula += Math.Round(firstNumber / secondNumber, 2).ToString();
-                        break;
-                }
+                case "+":
+                    result = firstNumber + secondNumber;
+                    break;
+                case "-":
+                    result = firstNumber - secondNumber;
+                    break;
+                case "*":
+                    result = firstNumber * secondNumber;
+                    break;
+                case "/":
+                    result = Math.Round(firstNumber / secondNumber, 2);
+                    break;
             }
-            else
-            {
-                currentButton.GetComponent<ChoosedItem>().SetIsTrue(false);
-                switch (operators)
-                {
-                    case "+":
-                        formula += (firstNumber + secondNumber + Random.Range(-1, 1)).ToString();
-                        break;
-                    case "-":
-                        formula += (firstNumber - secondNumber + Random.Range(-1, 1)).ToString();
-                        break;
-                    case "*":
-                        formula += (firstNumber * secondNumber + Random.Range(-1, 1)).ToString();
-                        break;
-                    case "/":
-                        formula += (Math.Round(firstNumber / secondNumber, 2) + +Random.Range(-1, 1)).ToString();
-                        break;
-                }
-            }
+
+            var checkForResult = result + Random.Range(-1, 1);
+            formula += checkForResult;
+            currentButton.GetComponent<ChoosedItem>().SetIsTrue(checkForResult == result);
 
             return formula;
         }
@@ -308,11 +291,6 @@ namespace GameTable
             currentButton.GetComponent<ChoosedItem>().SetIsTrue(checkForResult == result);
 
             return formula;
-        }
-
-        private bool IsComplexOperator(string oper)
-        {
-            return (oper.Equals("*") || oper.Equals("/"));
         }
 
         private double GetNumberWithOperator(double firstNumber, double secondNumber, string operators)
