@@ -15,8 +15,6 @@ public class Tutorial : MonoBehaviour
     [SerializeField] private GameObject bookCanvas;
     [SerializeField] private GameObject formulaTutorial;
     [SerializeField] private GameObject MainTable;
-    [SerializeField] private GameObject right;
-    [SerializeField] private GameObject left;
     [SerializeField] private Button workBook;
     [SerializeField] private Canvas trueAnswer;
     [SerializeField] private Canvas falseAnswer;
@@ -82,8 +80,6 @@ public class Tutorial : MonoBehaviour
     private void ShowFormulaTutorial()
     {
         formulaBookBtn.onClick.RemoveListener(ShowFormulaTutorial);
-        right.SetActive(false);
-        left.SetActive(false);
         formulaTutorial.SetActive(true);
         formulaBookTutorial.SetActive(false);
         formulaBookBtn.gameObject.GetComponent<Canvas>().sortingOrder = 0;
@@ -96,8 +92,6 @@ public class Tutorial : MonoBehaviour
 
     private void FinishTutorial()
     {
-        right.SetActive(true);
-        left.SetActive(true);
         camera.orthographic = false;
         MainTable.SetActive(true);
         bookCanvas.SetActive(false);
