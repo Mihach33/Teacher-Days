@@ -4196,7 +4196,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -5380,9 +5380,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Wydzia\u0142 Informatyki\r\n \r\nKatedra XR\r\nProgramowanie Gier\r\n
-    \nTeacher Days\n  \r\nPraca in\u017Cynierska przygotowana pod nadzorem:\r\nmgr
-    in\u017C. Rafa\u0142 Mas\u0142yk\r\n\nRecenzent:\r\nmgr in\u017C. Barbara Karpowicz\r"
+  m_text: "Wydzia\u0142 Informatyki\r\n \r\nKatedra XR\r\nProgramowanie Gier\r\n\nTeacher
+    Days\n  \r\nPraca in\u017Cynierska przygotowana pod nadzorem:\r\nmgr in\u017C.
+    Rafa\u0142 Mas\u0142yk\r\n\nRecenzent:\r\nmgr in\u017C. Barbara Karpowicz\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
