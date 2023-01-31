@@ -1941,7 +1941,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Designer
 
-    Anna ... s21'
+    Anna Pertsova s22896'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fdf2291e8fb73a94d9f63560199fe277, type: 2}
   m_sharedMaterial: {fileID: 1572406689354990317, guid: fdf2291e8fb73a94d9f63560199fe277,
@@ -3047,7 +3047,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 493.53, y: -0.00086594}
+  m_AnchoredPosition: {x: 493.53, y: -0.0008544922}
   m_SizeDelta: {x: 932.939, y: 1232}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1095495445
