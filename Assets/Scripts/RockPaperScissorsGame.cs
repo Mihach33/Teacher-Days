@@ -1,10 +1,9 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using Random = UnityEngine.Random;
+using Random = System.Random;
 
 namespace DefaultNamespace
 {
@@ -19,7 +18,7 @@ namespace DefaultNamespace
         private static string[] states = { "Rock", "Paper", "Scissors" };
         static int[,] transitionMatrix = new int[states.Length, states.Length];
         static int[] moveFrequency = new int[states.Length];
-        static System.Random random = new System.Random();
+        static Random random = new Random();
 
         private void Start()
         {
@@ -39,6 +38,14 @@ namespace DefaultNamespace
             int index2 = Array.IndexOf(states, move2);
             transitionMatrix[index1, index2]++;
         }
+        
+        static int GetOutcome(string move1, string move2)
+        {
+            int index1 = Array.IndexOf(states, move1);
+            int index2 = Array.IndexOf(states, move2);
+            int[][] transitionMatrix = new[] { new int[] { 0, 1, -1 }, new int[] { -1, 0, 1 }, new int[] { 1, -1, 0 } };
+            return transitionMatrix[index1][index2];
+        }
 
         static string ChooseMove(int[] moveFrequency)
         {
@@ -47,17 +54,11 @@ namespace DefaultNamespace
             for (int i = 0; i < states.Length; i++)
             {
                 for (int j = 0; j < states.Length; j++)
-                {
                     total += transitionMatrix[i, j];
-                }
                 if (total == 0)
-                {
                     probabilities[i] = 0;
-                }
                 else
-                {
                     probabilities[i] = transitionMatrix[i, i] / total;
-                }
             }
         
             int randomNumber = random.Next(100);
@@ -66,20 +67,11 @@ namespace DefaultNamespace
             {
                 cumulativeProbability += probabilities[i] * 100;
                 if (randomNumber <= cumulativeProbability)
-                {
                     return states[i];
-                }
             }
             return states[random.Next(states.Length)];
         }
-
-        static int GetOutcome(string move1, string move2)
-        {
-            int index1 = Array.IndexOf(states, move1);
-            int index2 = Array.IndexOf(states, move2);
-            int[][] transitionMatrix = new[] { new int[] { 0, 1, -1 }, new int[] { -1, 0, 1 }, new int[] { 1, -1, 0 } };
-            return transitionMatrix[index1][index2];
-        }
+        
 
         private IEnumerator CalculateFight(string userInput)
         {
